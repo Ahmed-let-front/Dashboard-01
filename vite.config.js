@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: "/Dashboard-1",
+  base: "/Dashboard-01",
   build: {
     chunkSizeWarningLimit: 2000,
     rollupOptions: {
