@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this first Dash for me" />
+    <meta name="author" content="Ahmed yasser" />
+    <title>Dashboard</title>
+    <script type="module" crossorigin src="/Dashboard-1/assets/index-BJqe-Ihv.js"></script>
+    <link rel="stylesheet" crossorigin href="/Dashboard-1/assets/index-CRDcdSpj.css">
+    <link rel="stylesheet" crossorigin href="/Dashboard-1/assets/vendor-MztCeB9w.css">
+  </head>
+  <body>
+    <div class="flex items-start">
+      <!-- start aside -->
+      <aside class="aside-shape">
+        <h3 class="main-head-sidebar text-[clamp(13px,2vw,18px)] my-[1rem_0]">
+          ahmed
+        </h3>
+        <ul class="flex flex-col gap-6 items-center md:items-start">
+          <li>
+            <a href="index.html" aria-label="Dashboard" aria-current="page">
+              <i class="fa-regular fa-chart-bar fa-fw" aria-hidden="true"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" aria-label="Settings">
+              <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" aria-label="Profile">
+              <i class="fa-regular fa-user fa-fw 2" aria-hidden="true"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html" aria-label="Projects">
+              <i
+                class="fa-solid fa-diagram-project fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html" aria-label="Courses">
+              <i
+                class="fa-solid fa-graduation-cap fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html" aria-label="Friends">
+              <i class="fa-regular fa-circle-user fa-fw" aria-hidden="true"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html" aria-label="Files">
+              <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html" aria-label="Plans">
+              <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- end aside -->
+      <div class="flex-1">
+        <!-- start header -->
+        <header
+          class="bg-box-bg h-30 flex justify-between items-center px-6 xsm:px-12 relative shadow-aside"
+        >
+          <form action="" role="search">
+            <div
+              class="relative before:absolute before:left-4 before:top-1/2 before:-translate-y-1/2 before:content-['\f002'] before:font-['Font_Awesome_6_Free'] before:text-grey-color"
+            >
+              <input
+                type="search"
+                name="search"
+                class="duration-300 rounded-2xl caret-black w-70 xsm:w-75 transition-[width] p-2 ps-14 bg-text-main focus:outline-0 focus:w-75 xsm:focus:w-85 placeholder:text-black/50 border-3 border-[#ccc] text-black placeholder:font-sans placeholder:font-[500]"
+                placeholder="Type A Keyword"
+                aria-placeholder="Type A Keyword"
+              />
+            </div>
+          </form>
+          <label for="user" class="md:hidden" aria-label="Toggle user menu">
+            <i class="fa-solid fa-bars cursor-pointer" aria-hidden="true"></i>
+          </label>
+          <input
+            type="checkbox"
+            id="user"
+            hidden
+            class="peer"
+            aria-label="Toggle user menu state"
+          />
+          <div
+            class="user-info flex gap-10 items-center opacity-0 scale-0 absolute pointer-events-none md:opacity-100 md:scale-100 md:pointer-events-auto md:static duration-300 md:flex peer-checked:block peer-checked:flex peer-checked:opacity-100 peer-checked:scale-100 peer-checked:pointer-events-auto bg-black top-full right-6 p-4 rounded-2xl before:absolute before:h-full before:w-[2px] before:bg-grey-color before:left-18 transition-all md:transition-none md:before:hidden md:bg-transparent z-2"
+            role="group"
+            aria-label="User controls"
+          >
+            <button
+              type="button"
+              aria-label="Unread notifications"
+              class="cursor-pointer relative after:absolute after:left-6 after:bottom-full after:bg-red-color after:size-4 after:rounded-full"
+            >
+              <i class="fa-regular fa-bell fa-lg" aria-hidden="true"></i>
+            </button>
+            <a
+              href="profile.html"
+              aria-label="User Profile"
+              class="cursor-pointer duration-300 transition-transform hover:scale-125"
+            >
+              <img
+                src="/Dashboard-1/assets/avatar-Dq5CGUgV.png"
+                alt="User Avatar"
+                class="size-12 rounded-full"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </header>
+        <!-- end header -->
+        <main>
+          <!--start dashnoard shape  -->
+          <section class="p-4 xsm:p-10 bg-body-bg">
+            <h1 class="main-head-section">Dashboard</h1>
+            <div
+              class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(450px,1fr))] gap-10 justify-center"
+            >
+              <!-- start welcome box -->
+              <div
+                class="shadow-aside rad-articles flex flex-col gap-12 hover-animate"
+              >
+                <header
+                  class="bg-white text-black flex gap-8 justify-between p-8 items-start relative"
+                >
+                  <div class="text">
+                    <h2 class="text-4xl font-black my-[1rem_0]">
+                      Welcome
+                      <span class="pt-3 block font-[600] text-2xl">Ahmed</span>
+                    </h2>
+                  </div>
+                  <img
+                    src="/Dashboard-1/assets/welcome-ClJSqQJ5.png"
+                    aria-hidden="true"
+                    class="w-80"
+                    loading="lazy"
+                  />
+                  <img
+                    src="/Dashboard-1/assets/avatar-Dq5CGUgV.png"
+                    alt="user Avatar"
+                    class="size-24 rounded-full absolute -bottom-8 border-4 border-grey-color"
+                    loading="lazy"
+                  />
+                </header>
+                <div class="content p-8 flex flex-col gap-12">
+                  <div
+                    class="welcome-stats flex flex-col md:flex-row gap-8 p-8 my-[2rem_0] [border-block:1px_solid_#ccc]"
+                  >
+                    <div class="welcome-box">
+                      <span class="state-name">Ahmed yasser</span>
+                      <span class="state">Developer</span>
+                    </div>
+                    <div class="welcome-box">
+                      <span class="state-name">80</span>
+                      <span class="state">Projects</span>
+                    </div>
+                    <div class="welcome-box">
+                      <span class="state-name">$8500</span>
+                      <span class="state">Earned</span>
+                    </div>
+                  </div>
+                  <button
+                    class="bg-white rounded-2xl font-bold w-fit p-4 text-black self-end my-[0_2rem] duration-300 transition-colors hover:bg-white/50 cursor-pointer"
+                  >
+                    Porfile
+                  </button>
+                </div>
+              </div>
+              <!-- end welcome box -->
+              <!-- start Quick draft box -->
+              <div
+                class="flex flex-col gap-8 bg-body-bg rad-articles p-6 hover-animate shadow-aside"
+              >
+                <div class="text flex flex-col gap-3">
+                  <h2 class="font-black text-[3rem] text-white">Quick Draft</h2>
+                  <p class="text-white/70 font-bold">
+                    Write A Draft For Your Ideas
+                  </p>
+                </div>
+                <form action="" class="flex flex-col gap-10">
+                  <input
+                    type="text"
+                    placeholder="Title"
+                    aria-placeholder="title"
+                    class="bg-white p-4 focus:outline-0 rounded-[8px] placeholder:text-black/50 placeholder:font-bold text-black"
+                    name="title user"
+                  />
+                  <textarea
+                    placeholder="Your Thought"
+                    aria-placeholder="Your Thought"
+                    class="min-h-70 bg-white p-4 focus:outline-0 rounded-2xl placeholder:text-black/50 placeholder:font-bold text-black"
+                    name="User Thought"
+                  ></textarea>
+                  <button
+                    type="submit"
+                    class="bg-white rounded-2xl w-fit p-2 px-8 font-bold text-black cursor-pointer duration-300 transition-colors hover:bg-white/50 self-end"
+                  >
+                    save
+                  </button>
+                </form>
+              </div>
+              <!-- end Quick draft box -->
+              <!-- start yearly targets box -->
+              <div
+                class="rad-articles shadow-aside bg-body-bg px-8 py-12 flex flex-col gap-8 targets hover-animate"
+              >
+                <div class="flex flex-col gap-5">
+                  <h2 class="font-black text-5xl">Yearly Targets</h2>
+                  <p class="text-white/50 font-bold">Targets Of The Year</p>
+                </div>
+                <ul class="flex flex-col gap-8">
+                  <li>
+                    <div class="icon bg-blue-color/20 text-blue-color">
+                      <i
+                        class="fa-solid fa-dollar-sign fa-lg"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="heading">
+                      <h3>Money</h3>
+                      <span>$20.000</span>
+                      <div
+                        role="progressbar"
+                        aria-label="Money Target"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span class="prog bg-blue-color w-[80%]">
+                          <span aria-hidden="true" class="bg-blue-color/30"
+                            >80%</span
+                          >
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon bg-orange-color/20 text-orange-color">
+                      <i class="fa-solid fa-code fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="heading">
+                      <h3>Projects</h3>
+                      <span>24</span>
+                      <div
+                        role="progressbar"
+                        aria-label="Money Target"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span class="prog bg-orange-color w-[50%]">
+                          <span aria-hidden="true" class="bg-orange-color/30"
+                            >50%</span
+                          >
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon bg-green-color/20 text-green-color">
+                      <i class="fa-solid fa-user fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="heading">
+                      <h3>Team</h3>
+                      <span>$12</span>
+                      <div
+                        role="progressbar"
+                        aria-label="Money Target"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span class="prog bg-green-color w-[75%]">
+                          <span aria-hidden="true" class="bg-green-color/30"
+                            >75%</span
+                          >
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end yearly targets box -->
+              <!-- start tickets box -->
+              <div
+                class="shadow-aside rad-articles bg-body-bg hover-animate p-12 tickets flex flex-col gap-12"
+              >
+                <div class="text flex flex-col gap-4">
+                  <h2 class="text-5xl font-black">Tickets Statistics</h2>
+                  <p class="text-white/50 font-bold">
+                    Everything About Support Tickets
+                  </p>
+                </div>
+                <ul
+                  class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center"
+                >
+                  <li>
+                    <i
+                      class="fa-regular fa-rectangle-list fa-2x text-orange-color"
+                    ></i>
+                    <div class="content">
+                      <span class="number">2500</span>
+                      <span class="state">Total</span>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-spinner fa-2x text-blue-color"></i>
+                    <div class="content">
+                      <span class="number">500</span>
+                      <span class="state">Pending</span>
+                    </div>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-regular fa-circle-check fa-2x text-green-color"
+                    ></i>
+                    <div class="content">
+                      <span class="number">1900</span
+                      ><span class="state">Closed</span>
+                    </div>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-regular fa-rectangle-xmark fa-2x text-red-color"
+                    ></i>
+                    <div class="content">
+                      <span class="number">100</span>
+                      <span class="state">Deleted</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end tickets box -->
+              <!-- start news box -->
+              <article class="shadow-aside hover-animate rad-articles">
+                <h2 class="font-black text-5xl my-[0_4rem] p-12 pb-0">
+                  Latest News
+                </h2>
+                <ul class="flex flex-col divide-y-1 divide-grey-color">
+                  <li>
+                    <div class="news-box pt-0">
+                      <img
+                        src="/Dashboard-1/assets/news-01-DIoG2mFz.png"
+                        aria-hidden="true"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h3>Created SASS Section</h3>
+                        <p>New SASS Examples & Tutorials</p>
+                      </div>
+                      <span>3 Days Ago </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="news-box">
+                      <img
+                        src="/Dashboard-1/assets/news-02-CXzcJ_te.png"
+                        aria-hidden="true"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h3>Changed The Design</h3>
+                        <p>A Brand New Website Design</p>
+                      </div>
+                      <span>5 Days Ago </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="news-box">
+                      <img
+                        src="/Dashboard-1/assets/news-03-iRLMQCfv.png"
+                        aria-hidden="true"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h3>Team Increased</h3>
+                        <p>3 Developers Joined The Team</p>
+                      </div>
+                      <span>7 Days Ago </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="news-box">
+                      <img
+                        src="/Dashboard-1/assets/news-04-BxW7uxOa.png"
+                        aria-hidden="true"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h3>Added Payment Gateway</h3>
+                        <p>Many New Payment Gateways Added</p>
+                      </div>
+                      <span>9 Days Ago </span>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+              <!-- end news box -->
+              <!-- start latest taks box -->
+              <div
+                class="latest-tasks hover-animate rad-articles shadow-aside pb-12"
+              >
+                <h2 class="font-black text-5xl p-12 pb-16">Latest Tasks</h2>
+                <ul
+                  class="tasks-list flex flex-col divide-y-1 divide-grey-color"
+                >
+                  <li class="pt-0">
+                    <div class="info">
+                      <h3>Record One New Video</h3>
+                      <p>Record Python Create Exe Project</p>
+                    </div>
+                    <i
+                      class="fa-regular fa-trash-can cursor-pointer"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+                  <li>
+                    <div class="info">
+                      <h3>Write Article</h3>
+                      <p>Write Low Level vs High Level Languages</p>
+                    </div>
+                    <i
+                      class="fa-regular fa-trash-can cursor-pointer"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+                  <li>
+                    <div class="info">
+                      <h3>Finish Project</h3>
+                      <p>Publish Academy Programming Project</p>
+                    </div>
+                    <i
+                      class="fa-regular fa-trash-can cursor-pointer"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+                  <li>
+                    <div class="info">
+                      <h3 class="text-white/50">
+                        <del>Attend The Meeting</del>
+                      </h3>
+                      <p class="text-white/50 text-[13px]">
+                        <del>Attend The Project Business Analysis Meeting</del>
+                      </p>
+                    </div>
+                    <i
+                      class="fa-regular fa-trash-can cursor-pointer text-white/50"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+                  <li>
+                    <div class="info">
+                      <h3>Finish Lesson</h3>
+                      <p>Finish Teaching Flex Box</p>
+                    </div>
+                    <i
+                      class="fa-regular fa-trash-can cursor-pointer"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+                </ul>
+              </div>
+              <!-- end latest taks box -->
+              <!-- start top search items box -->
+              <div
+                class="hover-animate rad-articles shadow-aside p-12 flex flex-col gap-8 top-search"
+              >
+                <h2 class="font-black text-5xl">Top Search Items</h2>
+                <table>
+                  <thead class="h-20 font-bold text-white/50">
+                    <tr>
+                      <th class="text-left">Keyword</th>
+                      <th class="text-right">Search Count</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="k-name">Programming</td>
+                      <td class="text-right"><span class="badge">220</span></td>
+                    </tr>
+                    <tr>
+                      <td class="k-name">JavaScript</td>
+                      <td class="text-right"><span class="badge">180</span></td>
+                    </tr>
+                    <tr>
+                      <td class="k-name">PHP</td>
+                      <td class="text-right"><span class="badge">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="k-name">Code</td>
+                      <td class="text-right"><span class="badge">145</span></td>
+                    </tr>
+                    <tr>
+                      <td class="k-name">Design</td>
+                      <td class="text-right"><span class="badge">110</span></td>
+                    </tr>
+                    <tr>
+                      <td class="k-name">Logic</td>
+                      <td class="text-right"><span class="badge">95</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- end top search items box -->
+              <!-- start latest uploads -->
+              <div
+                class="latest-Uploads rad-articles shadow-aside hover-animate pb-8"
+              >
+                <h2 class="font-black text-5xl p-12">Latest Uploads</h2>
+                <ul class="flex flex-col flex-1 divide-y-1 divdie-grey-color">
+                  <li>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M128%200c-17.6%200-32%2014.4-32%2032v448c0%2017.6%2014.4%2032%2032%2032h320c17.6%200%2032-14.4%2032-32V128L352%200H128z'%20fill='%23e2e5e7'/%3e%3cpath%20d='M384%20128h96L352%200v96c0%2017.6%2014.4%2032%2032%2032z'%20fill='%23b0b7bd'/%3e%3cpath%20fill='%23cad1d8'%20d='M480%20224l-96-96h96z'/%3e%3cpath%20d='M416%20416c0%208.8-7.2%2016-16%2016H48c-8.8%200-16-7.2-16-16V256c0-8.8%207.2-16%2016-16h352c8.8%200%2016%207.2%2016%2016v160z'%20fill='%23f15642'/%3e%3cpath%20d='M101.744%20303.152c0-4.224%203.328-8.832%208.688-8.832h29.552c16.64%200%2031.616%2011.136%2031.616%2032.48%200%2020.224-14.976%2031.488-31.616%2031.488h-21.36v16.896c0%205.632-3.584%208.816-8.192%208.816-4.224%200-8.688-3.184-8.688-8.816v-72.032zm16.88%207.28v31.872h21.36c8.576%200%2015.36-7.568%2015.36-15.504%200-8.944-6.784-16.368-15.36-16.368h-21.36zM196.656%20384c-4.224%200-8.832-2.304-8.832-7.92v-72.672c0-4.592%204.608-7.936%208.832-7.936h29.296c58.464%200%2057.184%2088.528%201.152%2088.528h-30.448zm8.064-72.912V368.4h21.232c34.544%200%2036.08-57.312%200-57.312H204.72zm99.152%201.024v20.336h32.624c4.608%200%209.216%204.608%209.216%209.072%200%204.224-4.608%207.68-9.216%207.68h-32.624v26.864c0%204.48-3.184%207.92-7.664%207.92-5.632%200-9.072-3.44-9.072-7.92v-72.672c0-4.592%203.456-7.936%209.072-7.936h44.912c5.632%200%208.96%203.344%208.96%207.936%200%204.096-3.328%208.704-8.96%208.704h-37.248v.016z'%20fill='%23fff'/%3e%3cpath%20d='M400%20432H96v16h304c8.8%200%2016-7.2%2016-16v-16c0%208.8-7.2%2016-16%2016z'%20fill='%23cad1d8'/%3e%3c/svg%3e"
+                      aria-hidden="true"
+                      loading="lazy"
+                    />
+                    <div class="content">
+                      <h3>My-file.pdf</h3>
+                      <span>Elzero</span>
+                    </div>
+                    <span class="file-size">2.9mb</span>
+                  </li>
+                  <li>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M128%200c-17.6%200-32%2014.4-32%2032v448c0%2017.6%2014.4%2032%2032%2032h320c17.6%200%2032-14.4%2032-32V128L352%200H128z'%20fill='%23e2e5e7'/%3e%3cpath%20d='M384%20128h96L352%200v96c0%2017.6%2014.4%2032%2032%2032z'%20fill='%23b0b7bd'/%3e%3cpath%20fill='%23cad1d8'%20d='M480%20224l-96-96h96z'/%3e%3cpath%20d='M416%20416c0%208.8-7.2%2016-16%2016H48c-8.8%200-16-7.2-16-16V256c0-8.8%207.2-16%2016-16h352c8.8%200%2016%207.2%2016%2016v160z'%20fill='%23f15642'/%3e%3cpath%20d='M121.408%20384.016c-4.096-2.32-6.656-6.912-4.096-12.288l36.72-71.76c3.456-6.784%2012.656-7.04%2015.856%200l36.08%2071.76c5.248%209.968-10.24%2017.904-14.848%207.92l-5.632-11.248h-47.2l-5.488%2011.264c-2.048%204.352-6.784%205.248-11.392%204.352zm55.008-32.496l-14.464-31.6-15.728%2031.6h30.192zm65.184%2026.736l-33.776-70.736c-4.992-10.112%2010.112-18.416%2015.728-7.808l11.392%2025.712%2014.704%2033.76%2014.448-33.76%2011.392-25.712c5.12-9.712%2019.952-3.584%2015.616%207.04l-32.624%2071.504c-2.944%208.064-12.032%209.984-16.88%200zm65.28-75.104c0-10.48%2016.896-10.88%2016.896%200v73.04c0%2010.624-16.896%2010.88-16.896%200v-73.04z'%20fill='%23fff'/%3e%3cpath%20d='M400%20432H96v16h304c8.8%200%2016-7.2%2016-16v-16c0%208.8-7.2%2016-16%2016z'%20fill='%23cad1d8'/%3e%3c/svg%3e"
+                      aria-hidden="true"
+                      loading="lazy"
+                    />
+                    <div class="content">
+                      <h3>My-Video-File.avi</h3>
+                      <span>Admin</span>
+                    </div>
+                    <span class="file-size">4.9mb</span>
+                  </li>
+                  <li>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M128%200c-17.6%200-32%2014.4-32%2032v448c0%2017.6%2014.4%2032%2032%2032h320c17.6%200%2032-14.4%2032-32V128L352%200H128z'%20fill='%23e2e5e7'/%3e%3cpath%20d='M384%20128h96L352%200v96c0%2017.6%2014.4%2032%2032%2032z'%20fill='%23b0b7bd'/%3e%3cpath%20fill='%23cad1d8'%20d='M480%20224l-96-96h96z'/%3e%3cpath%20d='M416%20416c0%208.8-7.2%2016-16%2016H48c-8.8%200-16-7.2-16-16V256c0-8.8%207.2-16%2016-16h352c8.8%200%2016%207.2%2016%2016v160z'%20fill='%2350bee8'/%3e%3cpath%20d='M100%20303.152c0-4.224%203.328-8.848%208.688-8.848h29.552c16.64%200%2031.616%2011.136%2031.616%2032.496%200%2020.224-14.976%2031.472-31.616%2031.472h-21.36v16.896c0%205.648-3.584%208.832-8.192%208.832-4.224%200-8.688-3.184-8.688-8.832v-72.016zm16.88%207.28v31.856h21.36c8.576%200%2015.36-7.552%2015.36-15.488%200-8.96-6.784-16.368-15.36-16.368h-21.36zm67.44%204.224c2.944-24.816%2040.416-29.28%2058.08-15.712%208.704%207.024-.512%2018.16-8.192%2012.528-9.472-6.016-30.96-8.832-33.648%204.464-3.456%2020.992%2052.192%208.976%2051.296%2042.992-.896%2032.496-47.968%2033.264-65.632%2018.672-4.24-3.44-4.096-9.056-1.792-12.528%203.328-3.312%207.024-4.464%2011.392-.896%2010.48%207.168%2037.488%2012.544%2039.392-5.648-1.648-18.912-54.88-7.52-50.896-43.872zM278.24%20384c-4.224%200-8.832-2.32-8.832-7.936v-72.656c0-4.608%204.608-7.936%208.832-7.936h29.296C366%20295.472%20364.72%20384%20308.688%20384H278.24zm8.064-72.928v57.312h21.232c34.544%200%2036.08-57.312%200-57.312h-21.232z'%20fill='%23fff'/%3e%3cpath%20d='M400%20432H96v16h304c8.8%200%2016-7.2%2016-16v-16c0%208.8-7.2%2016-16%2016z'%20fill='%23cad1d8'/%3e%3c/svg%3e"
+                      aria-hidden="true"
+                      loading="lazy"
+                    />
+                    <div class="content">
+                      <h3>My-Psd-File.pdf</h3>
+                      <span>Osama</span>
+                    </div>
+                    <span class="file-size">4.5mb</span>
+                  </li>
+                  <li>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M128%200c-17.6%200-32%2014.4-32%2032v448c0%2017.6%2014.4%2032%2032%2032h320c17.6%200%2032-14.4%2032-32V128L352%200H128z'%20fill='%23e2e5e7'/%3e%3cpath%20d='M384%20128h96L352%200v96c0%2017.6%2014.4%2032%2032%2032z'%20fill='%23b0b7bd'/%3e%3cpath%20fill='%23cad1d8'%20d='M480%20224l-96-96h96z'/%3e%3cpath%20d='M416%20416c0%208.8-7.2%2016-16%2016H48c-8.8%200-16-7.2-16-16V256c0-8.8%207.2-16%2016-16h352c8.8%200%2016%207.2%2016%2016v160z'%20fill='%2384bd5a'/%3e%3cpath%20d='M132.64%20384c-8.064%200-11.264-7.792-6.656-13.296l45.552-60.512h-37.76c-11.12%200-10.224-15.712%200-15.712h51.568c9.712%200%2012.528%209.184%205.632%2016.624l-43.632%2056.656h41.584c10.24%200%2011.52%2016.256-1.008%2016.256h-55.28V384zm79.408-80.848c0-10.496%2016.896-10.88%2016.896%200v73.04c0%2010.608-16.896%2010.88-16.896%200v-73.04zm39.568%200c0-4.224%203.328-8.832%208.704-8.832h29.552c16.64%200%2031.616%2011.136%2031.616%2032.48%200%2020.224-14.976%2031.488-31.616%2031.488h-21.36v16.896c0%205.632-3.584%208.816-8.192%208.816-4.224%200-8.704-3.184-8.704-8.816v-72.032zm16.88%207.28v31.872h21.36c8.576%200%2015.36-7.568%2015.36-15.504%200-8.944-6.784-16.368-15.36-16.368h-21.36z'%20fill='%23fff'/%3e%3cpath%20d='M400%20432H96v16h304c8.8%200%2016-7.2%2016-16v-16c0%208.8-7.2%2016-16%2016z'%20fill='%23cad1d8'/%3e%3c/svg%3e"
+                      aria-hidden="true"
+                      loading="lazy"
+                    />
+                    <div class="content">
+                      <h3>My-Zip-File.pdf</h3>
+                      <span>User</span>
+                    </div>
+                    <span class="file-size">8.9mb</span>
+                  </li>
+                  <li>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M128%200c-17.6%200-32%2014.4-32%2032v448c0%2017.6%2014.4%2032%2032%2032h320c17.6%200%2032-14.4%2032-32V128L352%200H128z'%20fill='%23e2e5e7'/%3e%3cpath%20d='M384%20128h96L352%200v96c0%2017.6%2014.4%2032%2032%2032z'%20fill='%23b0b7bd'/%3e%3cpath%20fill='%23cad1d8'%20d='M480%20224l-96-96h96z'/%3e%3cpath%20d='M416%20416c0%208.8-7.2%2016-16%2016H48c-8.8%200-16-7.2-16-16V256c0-8.8%207.2-16%2016-16h352c8.8%200%2016%207.2%2016%2016v160z'%20fill='%23576d7e'/%3e%3cpath%20d='M118.08%20384c-4.224%200-8.832-2.32-8.832-7.936v-72.656c0-4.608%204.608-7.936%208.832-7.936h29.296c58.464%200%2057.184%2088.528%201.152%2088.528H118.08zm8.064-72.928v57.312h21.232c34.544%200%2036.08-57.312%200-57.312h-21.232zm82.464-7.92c0-4.224%203.584-7.808%208.064-7.808%204.096%200%207.552%203.6%207.552%207.808v64.096h34.8c12.528%200%2012.8%2016.752%200%2016.752h-42.336c-4.48%200-8.064-3.184-8.064-7.808v-73.04h-.016zm74.944%200c0-4.224%203.584-7.808%208.064-7.808%204.096%200%207.552%203.6%207.552%207.808v64.096h34.8c12.528%200%2012.8%2016.752%200%2016.752h-42.336c-4.48%200-8.064-3.184-8.064-7.808v-73.04h-.016z'%20fill='%23fff'/%3e%3cpath%20d='M400%20432H96v16h304c8.8%200%2016-7.2%2016-16v-16c0%208.8-7.2%2016-16%2016z'%20fill='%23cad1d8'/%3e%3c/svg%3e"
+                      aria-hidden="true"
+                      loading="lazy"
+                    />
+                    <div class="content">
+                      <h3>My-DLL-File.pdf</h3>
+                      <span>Admin</span>
+                    </div>
+                    <span class="file-size">4.9mb</span>
+                  </li>
+                  <li>
+                    <img
+                      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M128%200c-17.6%200-32%2014.4-32%2032v448c0%2017.6%2014.4%2032%2032%2032h320c17.6%200%2032-14.4%2032-32V128L352%200H128z'%20fill='%23e2e5e7'/%3e%3cpath%20d='M384%20128h96L352%200v96c0%2017.6%2014.4%2032%2032%2032z'%20fill='%23b0b7bd'/%3e%3cpath%20fill='%23cad1d8'%20d='M480%20224l-96-96h96z'/%3e%3cpath%20d='M416%20416c0%208.8-7.2%2016-16%2016H48c-8.8%200-16-7.2-16-16V256c0-8.8%207.2-16%2016-16h352c8.8%200%2016%207.2%2016%2016v160z'%20fill='%23f7b84e'/%3e%3cpath%20d='M116.608%20384c-4.48%200-7.936-3.456-7.936-7.936v-72.656c0-4.608%203.456-7.936%207.936-7.936h45.92c11.776%200%2011.52%2016.624%200%2016.624h-36.832v19.2h32.24c11.376%200%2011.376%2016.768%200%2016.768h-32.24v19.184h39.024c11.648%200%2012.528%2016.752%200%2016.752h-48.112zm73.872-80.848c0-4.224%203.328-8.848%208.704-8.848h29.552c16.64%200%2031.616%2011.136%2031.616%2032.496%200%2020.224-14.976%2031.472-31.616%2031.472h-21.36v16.896c0%205.648-3.584%208.832-8.192%208.832-4.224%200-8.704-3.184-8.704-8.832v-72.016zm16.896%207.28v31.856h21.36c8.576%200%2015.36-7.552%2015.36-15.488%200-8.96-6.784-16.368-15.36-16.368h-21.36zm67.424%204.224c2.944-24.816%2040.416-29.28%2058.08-15.712%208.704%207.024-.512%2018.16-8.192%2012.528-9.472-6.016-30.96-8.832-33.648%204.464-3.456%2020.992%2052.192%208.976%2051.296%2042.992-.896%2032.496-47.968%2033.264-65.632%2018.672-4.224-3.44-4.096-9.056-1.792-12.528%203.328-3.312%207.024-4.464%2011.392-.896%2010.48%207.168%2037.488%2012.544%2039.408-5.648-1.664-18.912-54.88-7.52-50.912-43.872z'%20fill='%23fff'/%3e%3cpath%20d='M400%20432H96v16h304c8.8%200%2016-7.2%2016-16v-16c0%208.8-7.2%2016-16%2016z'%20fill='%23cad1d8'/%3e%3c/svg%3e"
+                      aria-hidden="true"
+                      loading="lazy"
+                    />
+                    <div class="content">
+                      <h3>My-Eps-File.pdf</h3>
+                      <span>Designer</span>
+                    </div>
+                    <span class="file-size">8.9mb</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- end latest uploads -->
+              <!-- start Last Project Progress -->
+              <div
+                class="rad-articles shadow-aside hover-animate p-14 flex flex-col gap-14 last-projects relative z-2"
+              >
+                <h2 class="font-black text-5xl">Last Project Progress</h2>
+                <ul
+                  class="flex flex-col gap-12 md:justify-between flex-1 relative before:absolute before:left-2 before:top-0 before:bg-blue-color before:h-full before:w-[2px]"
+                >
+                  <li><h3>Got The Project</h3></li>
+                  <li><h3>Started The Project</h3></li>
+                  <li><h3>The Project About To Finish</h3></li>
+                  <li class="test-the-project"><h3>Test The Project</h3></li>
+                  <li class="last-project">
+                    <h3>Finish The Project & Get Money</h3>
+                  </li>
+                </ul>
+                <img
+                  src="/Dashboard-1/assets/project-BoIzW72D.png"
+                  aria-hidden="true"
+                  class="absolute bottom-0 h-60 opacity-70 right-20 -z-1 hidden md:block"
+                />
+              </div>
+              <!-- end Last Project Progress -->
+              <!-- start Reminders -->
+              <div
+                class="rad-articles shadow-aside p-12 hover-animate Reminders flex flex-col gap-12 md:ps-20"
+              >
+                <h2 class="font-black text-5xl">Reminders</h2>
+                <ul class="flex flex-col gap-6 flex-1 justify-between ps-6">
+                  <li class="after:bg-blue-color before:bg-blue-color">
+                    <h3>Check My Tasks List</h3>
+                    <span>28/09/2022 - 12:00am </span>
+                  </li>
+                  <li class="after:bg-green-color before:bg-green-color">
+                    <h3>Check My Projects</h3>
+                    <span>26/10/2022 - 12:00am</span>
+                  </li>
+                  <li class="after:bg-orange-color before:bg-orange-color">
+                    <h3>Call All My Clients</h3>
+                    <span>05/11/2022 - 12:00am</span>
+                  </li>
+                  <li class="after:bg-red-color before:bg-red-color">
+                    <h3>Finish The Development Workshop</h3>
+                    <span>20/12/2022 - 12:00am</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- end Reminders -->
+              <!-- start Latest Post -->
+              <article
+                class="rad-articles shadow-aside p-12 hover-animate flex flex-col gap-12"
+              >
+                <h2 class="font-black text-5xl">Latest Post</h2>
+                <header
+                  class="flex items-center gap-10 border-b-1 border-grey-color pb-14"
+                >
+                  <img
+                    src="/Dashboard-1/assets/avatar-Dq5CGUgV.png"
+                    alt="user avatar"
+                    class="h-20"
+                    loading="lazy"
+                  />
+                  <div class="info flex flex-col gap-2">
+                    <span class="font-bold text-3xl">Ahmed yasser</span>
+                    <span class="text-white/50 font-bold text-[13px]"
+                      >About 3 Hours Ago</span
+                    >
+                  </div>
+                </header>
+                <p
+                  class="text-3xl leading-[1.7] font-[600] border-b-1 border-grey-color pb-14"
+                >
+                  You can fool all of the people some of the time, and some of
+                  the people all of the time, but you can't fool all of the
+                  people all of the time.
+                </p>
+                <footer
+                  class="flex justify-between items-center text-grey-color font-bold"
+                >
+                  <div class="likes flex gap-4 items-center">
+                    <i class="fa-regular fa-heart"></i> <span>1.8k</span>
+                  </div>
+                  <div class="comments flex gap-4 items-center">
+                    <i class="fa-regular fa-comments"></i> <span>500</span>
+                  </div>
+                </footer>
+              </article>
+              <!-- end Latest Post -->
+              <!-- start Social Media Stats -->
+              <div
+                class="rad-articles shadow-aside p-8 md:p-12 hover-animate flex flex-col gap-12 social-media-stats"
+              >
+                <h2 class="text-5xl font-black">Social Media Stats</h2>
+                <ul class="flex flex-col gap-4 flex-1">
+                  <li class="bg-blue-alt-color/20 group">
+                    <div class="icons bg-[#1da1f2]">
+                      <span class="sr-only">Twitter</span>
+                      <i
+                        class="fa-brands fa-x-twitter fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <span>90K Followers</span>
+                    <a class="bg-blue-color/70 hover:bg-blue-color/50" href="#"
+                      >Follow</a
+                    >
+                  </li>
+                  <li class="bg-[#1877f2]/40 group">
+                    <div class="icons bg-[#1877f2]">
+                      <span class="sr-only">Facebook</span>
+                      <i
+                        class="fa-brands fa-facebook-f fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <span>2M Like</span>
+                    <a class="bg-[#1877f2]/70 hover:bg-[#1877f2]/50" href="#"
+                      >Like</a
+                    >
+                  </li>
+                  <li class="bg-red-color/20 group">
+                    <div class="icons bg-red-color">
+                      <span class="sr-only">YouTube</span>
+                      <i
+                        class="fa-brands fa-youtube fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <span>1M Subs</span>
+                    <a class="bg-red-color/70 hover:bg-red-color/50" href="#"
+                      >Subscribe</a
+                    >
+                  </li>
+                  <li class="bg-blue-alt-color/40 group">
+                    <div class="icons bg-blue-color">
+                      <span class="sr-only">LinkedIn</span>
+                      <i
+                        class="fa-brands fa-linkedin fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <span>70K Followers</span>
+                    <a class="bg-blue-color/70 hover:bg-blue-color/50" href="#"
+                      >Follow</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- end Social Media Stats -->
+              <!-- start projects -->
+              <div
+                class="col-span-full shadow-aside p-8 md:p-12 flex flex-col gap-16 rad-articles projects-article"
+              >
+                <h2 class="font-black text-5xl">Projects</h2>
+                <div class="overflow-x-auto">
+                  <table class="border-1 border-[#eee] min-w-[1000px] w-full">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Finish Date</th>
+                        <th>Client</th>
+                        <th>Price</th>
+                        <th>Team</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Ministry Wikipedia</td>
+                        <td>10 May 2022</td>
+                        <td>Ministry</td>
+                        <td>$5300</td>
+                        <td class="imgs">
+                          <img
+                            src="/Dashboard-1/assets/team-01-Dfqkz6jG.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="/Dashboard-1/assets/team-02-COtlxv_R.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="/Dashboard-1/assets/team-03-C5pX2a2d.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="/Dashboard-1/assets/team-05-B_ltAQdV.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                        </td>
+                        <td><span class="bg-orange-color/70">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <td>Elzero Shop</td>
+                        <td>12 Oct 2021</td>
+                        <td>Elzero Company</td>
+                        <td>$1500</td>
+                        <td class="imgs">
+                          <img
+                            src="/Dashboard-1/assets/team-01-Dfqkz6jG.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="/Dashboard-1/assets/team-02-COtlxv_R.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="/Dashboard-1/assets/team-05-B_ltAQdV.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                        </td>
+                        <td>
+                          <span class="bg-blue-color/70">In Progress</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Bouba App</td>
+                        <td>05 Sep 2021</td>
+                        <td>Bouba</td>
+                        <td>$800</td>
+                        <td class="imgs">
+                          <img
+                            src="/Dashboard-1/assets/team-02-COtlxv_R.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="/Dashboard-1/assets/team-03-C5pX2a2d.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                        </td>
+                        <td>
+                          <span class="bg-green-color/70">Completed</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Mahmoud Website</td>
+                        <td>22 May 2021</td>
+                        <td>Mahmoud</td>
+                        <td>$600</td>
+                        <td class="imgs">
+                          <img
+                            src="/Dashboard-1/assets/team-01-Dfqkz6jG.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="/Dashboard-1/assets/team-02-COtlxv_R.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                        </td>
+                        <td>
+                          <span class="bg-green-color/70">Completed</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Sayed Website</td>
+                        <td>24 May 2021</td>
+                        <td>Sayed</td>
+                        <td>$300</td>
+                        <td class="imgs">
+                          <img
+                            src="/Dashboard-1/assets/team-01-Dfqkz6jG.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="/Dashboard-1/assets/team-03-C5pX2a2d.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                        </td>
+                        <td><span class="bg-red-color/70">Rejected</span></td>
+                      </tr>
+                      <tr>
+                        <td>Arena Application</td>
+                        <td>01 Mar 2021</td>
+                        <td>Arena Company</td>
+                        <td>$2600</td>
+                        <td class="imgs">
+                          <img
+                            src="/Dashboard-1/assets/team-01-Dfqkz6jG.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="/Dashboard-1/assets/team-02-COtlxv_R.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="/Dashboard-1/assets/team-03-C5pX2a2d.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="/Dashboard-1/assets/team-05-B_ltAQdV.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                        </td>
+                        <td>
+                          <span class="bg-green-color/70">Completed</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- end projects -->
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
