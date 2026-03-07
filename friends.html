@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this first Dash for me" />
+    <meta name="author" content="Ahmed yasser" />
+    <title>Friends</title>
+    <script type="module" crossorigin src="/Dashboard-01/assets/main-DLVgFVnn.js"></script>
+    <link rel="stylesheet" crossorigin href="/Dashboard-01/assets/main-CFJjFp7K.css">
+    <link rel="stylesheet" crossorigin href="/Dashboard-01/assets/vendor-Dee_Dc0_.css">
+  </head>
+  <body>
+    <div class="flex items-start friends-page">
+      <!-- start aside -->
+      <aside class="aside-shape">
+        <h3 class="main-head-sidebar text-[clamp(13px,2vw,18px)] my-[1rem_0]">
+          ahmed
+        </h3>
+        <ul class="flex flex-col gap-6 items-center md:items-start">
+          <li>
+            <a href="index.html" aria-label="Dashboard">
+              <i class="fa-regular fa-chart-bar fa-fw" aria-hidden="true"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" aria-label="Settings">
+              <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" aria-label="Profile">
+              <i class="fa-regular fa-user fa-fw 2" aria-hidden="true"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html" aria-label="Projects">
+              <i
+                class="fa-solid fa-diagram-project fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html" aria-label="Courses">
+              <i
+                class="fa-solid fa-graduation-cap fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html" aria-label="Friends" aria-current="page">
+              <i class="fa-regular fa-circle-user fa-fw" aria-hidden="true"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html" aria-label="Files">
+              <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html" aria-label="Plans">
+              <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- end aside -->
+      <div class="flex-1">
+        <!-- start header -->
+        <header
+          class="bg-box-bg h-30 flex justify-between items-center px-6 xsm:px-12 relative shadow-aside"
+        >
+          <form action="" role="search">
+            <div
+              class="relative before:absolute before:left-4 before:top-1/2 before:-translate-y-1/2 before:content-['\f002'] before:font-['Font_Awesome_6_Free'] before:text-grey-color"
+            >
+              <input
+                type="search"
+                name="search"
+                class="duration-300 rounded-2xl caret-black w-70 xsm:w-75 transition-[width] p-2 ps-14 bg-text-main focus:outline-0 focus:w-75 xsm:focus:w-85 placeholder:text-black/50 border-3 border-[#ccc] text-black placeholder:font-sans placeholder:font-[500]"
+                placeholder="Type A Keyword"
+                aria-placeholder="Type A Keyword"
+              />
+            </div>
+          </form>
+          <label for="user" class="md:hidden" aria-label="Toggle user menu">
+            <i class="fa-solid fa-bars cursor-pointer" aria-hidden="true"></i>
+          </label>
+          <input
+            type="checkbox"
+            id="user"
+            hidden
+            class="peer"
+            aria-label="Toggle user menu state"
+          />
+          <div
+            class="user-info flex gap-10 items-center opacity-0 scale-0 absolute pointer-events-none md:opacity-100 md:scale-100 md:pointer-events-auto md:static duration-300 md:flex peer-checked:block peer-checked:flex peer-checked:opacity-100 peer-checked:scale-100 peer-checked:pointer-events-auto bg-black top-full right-6 p-4 rounded-2xl before:absolute before:h-full before:w-[2px] before:bg-grey-color before:left-18 transition-all md:transition-none md:before:hidden md:bg-transparent z-2"
+            role="group"
+            aria-label="User controls"
+          >
+            <button
+              type="button"
+              aria-label="Unread notifications"
+              class="cursor-pointer relative after:absolute after:left-6 after:bottom-full after:bg-red-color after:size-4 after:rounded-full"
+            >
+              <i class="fa-regular fa-bell fa-lg" aria-hidden="true"></i>
+            </button>
+            <a
+              href="profile.html"
+              aria-label="User Profile"
+              class="cursor-pointer duration-300 transition-transform hover:scale-125"
+            >
+              <img
+                src="/Dashboard-01/assets/avatar-Dq5CGUgV.png"
+                alt="User Avatar"
+                class="size-12 rounded-full"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </header>
+        <main>
+          <!--start friends shape  -->
+          <section class="p-6 xsm:p-10 bg-body-bg">
+            <h1 class="main-head-section">Friends</h1>
+            <div
+              class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-10"
+            >
+              <div class="friend-card rad-articles shadow-aside hover-animate">
+                <div class="contact-actions">
+                  <button aria-label="Call">
+                    <i class="fa-solid fa-phone"></i></button
+                  ><button aria-label="Message">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                </div>
+                <div class="profile-info">
+                  <img
+                    src="/Dashboard-01/assets/friend-01-B_FKGgjo.jpg"
+                    alt=""
+                    class="profile-img"
+                  />
+                  <h2 class="name">Ahmed Nasser</h2>
+                  <span class="title">JavaScript Developer</span>
+                </div>
+                <div class="stats-section">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-face-smile fa-fw"></i
+                      ><span>99 Friend</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-code-commit fa-fw"></i
+                      ><span>15 Projects</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-newspaper fa-fw"></i
+                      ><span>25 Articles</span>
+                    </li>
+                  </ul>
+                  <span class="vip-badge">VIP</span>
+                </div>
+                <footer class="card-footer">
+                  <span class="join-date">Joined 02/10/2021</span>
+                  <div class="action-buttons">
+                    <button class="profile-btn">Profile</button
+                    ><button class="remove-btn">Remove</button>
+                  </div>
+                </footer>
+              </div>
+              <div class="friend-card rad-articles shadow-aside hover-animate">
+                <div class="contact-actions">
+                  <button aria-label="Call">
+                    <i class="fa-solid fa-phone"></i></button
+                  ><button aria-label="Message">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                </div>
+                <div class="profile-info">
+                  <img
+                    src="/Dashboard-01/assets/friend-02-BmcwqmTZ.jpg"
+                    alt=""
+                    class="profile-img"
+                  />
+                  <h2 class="name">Omar Fathy</h2>
+                  <span class="title">Cloud Developer</span>
+                </div>
+                <div class="stats-section">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-face-smile fa-fw"></i
+                      ><span>30 Friends</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-code-commit fa-fw"></i
+                      ><span>11 Projects</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-newspaper fa-fw"></i
+                      ><span>12 Articles</span>
+                    </li>
+                  </ul>
+                </div>
+                <footer class="card-footer">
+                  <span class="join-date">Joined 02/08/2020</span>
+                  <div class="action-buttons">
+                    <button class="profile-btn">Profile</button
+                    ><button class="remove-btn">Remove</button>
+                  </div>
+                </footer>
+              </div>
+              <div class="friend-card rad-articles shadow-aside hover-animate">
+                <div class="contact-actions">
+                  <button aria-label="Call">
+                    <i class="fa-solid fa-phone"></i></button
+                  ><button aria-label="Message">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                </div>
+                <div class="profile-info">
+                  <img
+                    src="/Dashboard-01/assets/friend-03-v1TTZ5JN.jpg"
+                    alt=""
+                    class="profile-img"
+                  />
+                  <h2 class="name">Omar Ahmed</h2>
+                  <span class="title">Mobile Developer</span>
+                </div>
+                <div class="stats-section">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-face-smile fa-fw"></i
+                      ><span>80 Friends</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-code-commit fa-fw"></i
+                      ><span>20 Projects</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-newspaper fa-fw"></i
+                      ><span>18 Articles</span>
+                    </li>
+                  </ul>
+                </div>
+                <footer class="card-footer">
+                  <span class="join-date">Joined 02/06/2020</span>
+                  <div class="action-buttons">
+                    <button class="profile-btn">Profile</button
+                    ><button class="remove-btn">Remove</button>
+                  </div>
+                </footer>
+              </div>
+              <div class="friend-card rad-articles shadow-aside hover-animate">
+                <div class="contact-actions">
+                  <button aria-label="Call">
+                    <i class="fa-solid fa-phone"></i></button
+                  ><button aria-label="Message">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                </div>
+                <div class="profile-info">
+                  <img
+                    src="/Dashboard-01/assets/friend-04-Bjtttzsd.jpg"
+                    alt=""
+                    class="profile-img"
+                    loading="lazy"
+                  />
+                  <h2 class="name">Shady Nabil</h2>
+                  <span class="title">Back-End Developer</span>
+                </div>
+                <div class="stats-section">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-face-smile fa-fw"></i
+                      ><span>70 Friends</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-code-commit fa-fw"></i
+                      ><span>30 Projects</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-newspaper fa-fw"></i
+                      ><span>18 Articles</span>
+                    </li>
+                  </ul>
+                </div>
+                <footer class="card-footer">
+                  <span class="join-date">Joined 28/06/2020</span>
+                  <div class="action-buttons">
+                    <button class="profile-btn">Profile</button
+                    ><button class="remove-btn">Remove</button>
+                  </div>
+                </footer>
+              </div>
+              <div class="friend-card rad-articles shadow-aside hover-animate">
+                <div class="contact-actions">
+                  <button aria-label="Call">
+                    <i class="fa-solid fa-phone"></i></button
+                  ><button aria-label="Message">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                </div>
+                <div class="profile-info">
+                  <img
+                    src="/Dashboard-01/assets/friend-05-B9MnFvC2.jpg"
+                    alt=""
+                    class="profile-img"
+                    loading="lazy"
+                  />
+                  <h2 class="name">Mohamed Ibrahim</h2>
+                  <span class="title">Algorithm Developer</span>
+                </div>
+                <div class="stats-section">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-face-smile fa-fw"></i
+                      ><span>80 Friends</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-code-commit fa-fw"></i
+                      ><span>30 Projects</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-newspaper fa-fw"></i
+                      ><span>18 Articles</span>
+                    </li>
+                  </ul>
+                </div>
+                <footer class="card-footer">
+                  <span class="join-date">Joined 28/08/2020</span>
+                  <div class="action-buttons">
+                    <button class="profile-btn">Profile</button
+                    ><button class="remove-btn">Remove</button>
+                  </div>
+                </footer>
+              </div>
+              <div class="friend-card rad-articles shadow-aside hover-animate">
+                <div class="contact-actions">
+                  <button aria-label="Call">
+                    <i class="fa-solid fa-phone"></i></button
+                  ><button aria-label="Message">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                </div>
+                <div class="profile-info">
+                  <img
+                    src="/Dashboard-01/assets/friend-04-Bjtttzsd.jpg"
+                    alt=""
+                    class="profile-img"
+                    loading="lazy"
+                  />
+                  <h2 class="name">Amr Hendawy</h2>
+                  <span class="title">Back-End Developer</span>
+                </div>
+                <div class="stats-section">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-face-smile fa-fw"></i
+                      ><span>70 Friends</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-code-commit fa-fw"></i
+                      ><span>30 Projects</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-newspaper fa-fw"></i
+                      ><span>18 Articles</span>
+                    </li>
+                  </ul>
+                </div>
+                <footer class="card-footer">
+                  <span class="join-date">Joined 28/06/2020</span>
+                  <div class="action-buttons">
+                    <button class="profile-btn">Profile</button
+                    ><button class="remove-btn">Remove</button>
+                  </div>
+                </footer>
+              </div>
+              <div class="friend-card rad-articles shadow-aside hover-animate">
+                <div class="contact-actions">
+                  <button aria-label="Call">
+                    <i class="fa-solid fa-phone"></i></button
+                  ><button aria-label="Message">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                </div>
+                <div class="profile-info">
+                  <img
+                    src="/Dashboard-01/assets/friend-02-BmcwqmTZ.jpg"
+                    alt=""
+                    class="profile-img"
+                    loading="lazy"
+                  />
+                  <h2 class="name">Mahmoud Adel</h2>
+                  <span class="title">Cloud Developer</span>
+                </div>
+                <div class="stats-section">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-face-smile fa-fw"></i
+                      ><span>30 Friends</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-code-commit fa-fw"></i
+                      ><span>11 Projects</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-newspaper fa-fw"></i
+                      ><span>12 Articles</span>
+                    </li>
+                  </ul>
+                </div>
+                <footer class="card-footer">
+                  <span class="join-date">Joined 02/08/2020</span>
+                  <div class="action-buttons">
+                    <button class="profile-btn">Profile</button
+                    ><button class="remove-btn">Remove</button>
+                  </div>
+                </footer>
+              </div>
+              <div class="friend-card rad-articles shadow-aside hover-animate">
+                <div class="contact-actions">
+                  <button aria-label="Call">
+                    <i class="fa-solid fa-phone"></i></button
+                  ><button aria-label="Message">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                </div>
+                <div class="profile-info">
+                  <img
+                    src="/Dashboard-01/assets/friend-05-B9MnFvC2.jpg"
+                    alt=""
+                    class="profile-img"
+                    loading="lazy"
+                  />
+                  <h2 class="name">Ahmed Abuzaid</h2>
+                  <span class="title">Content Creator</span>
+                </div>
+                <div class="stats-section">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-face-smile fa-fw"></i
+                      ><span>80 Friends</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-code-commit fa-fw"></i
+                      ><span>30 Projects</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-newspaper fa-fw"></i
+                      ><span>18 Articles</span>
+                    </li>
+                  </ul>
+                  <span class="vip-badge">VIP</span>
+                </div>
+                <footer class="card-footer">
+                  <span class="join-date">Joined 28/08/2020</span>
+                  <div class="action-buttons">
+                    <button class="profile-btn">Profile</button
+                    ><button class="remove-btn">Remove</button>
+                  </div>
+                </footer>
+              </div>
+              <div class="friend-card rad-articles shadow-aside hover-animate">
+                <div class="contact-actions">
+                  <button aria-label="Call">
+                    <i class="fa-solid fa-phone"></i></button
+                  ><button aria-label="Message">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                </div>
+                <div class="profile-info">
+                  <img
+                    src="/Dashboard-01/assets/friend-01-B_FKGgjo.jpg"
+                    alt=""
+                    class="profile-img"
+                    loading="lazy"
+                  />
+                  <h2 class="name">Gareeb Elshiekh</h2>
+                  <span class="title">JavaScript Developer</span>
+                </div>
+                <div class="stats-section">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-face-smile fa-fw"></i
+                      ><span>90 Friends</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-code-commit fa-fw"></i
+                      ><span>15 Projects</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-newspaper fa-fw"></i
+                      ><span>25 Articles</span>
+                    </li>
+                  </ul>
+                  <span class="vip-badge">VIP</span>
+                </div>
+                <footer class="card-footer">
+                  <span class="join-date">Joined 02/10/2020</span>
+                  <div class="action-buttons">
+                    <button class="profile-btn">Profile</button
+                    ><button class="remove-btn">Remove</button>
+                  </div>
+                </footer>
+              </div>
+              <div class="friend-card rad-articles shadow-aside hover-animate">
+                <div class="contact-actions">
+                  <button aria-label="Call">
+                    <i class="fa-solid fa-phone"></i></button
+                  ><button aria-label="Message">
+                    <i class="fa-regular fa-envelope"></i>
+                  </button>
+                </div>
+                <div class="profile-info">
+                  <img
+                    src="/Dashboard-01/assets/friend-03-v1TTZ5JN.jpg"
+                    alt=""
+                    class="profile-img"
+                    loading="lazy"
+                  />
+                  <h2 class="name">Hamza</h2>
+                  <span class="title">Front-End Developer</span>
+                </div>
+                <div class="stats-section">
+                  <ul>
+                    <li>
+                      <i class="fa-regular fa-face-smile fa-fw"></i
+                      ><span>80 Friends</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-code-commit fa-fw"></i
+                      ><span>20 Projects</span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-newspaper fa-fw"></i
+                      ><span>18 Articles</span>
+                    </li>
+                  </ul>
+                </div>
+                <footer class="card-footer">
+                  <span class="join-date">Joined 02/06/2020</span>
+                  <div class="action-buttons">
+                    <button class="profile-btn">Profile</button
+                    ><button class="remove-btn">Remove</button>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
