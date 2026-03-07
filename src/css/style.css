@@ -445,9 +445,6 @@
         border-color: var(--color-blue-color);
       }
     }
-    input {
-      @apply sr-only;
-    }
   }
   /* End Widgets Control Section */
   /* Start Backup Manager Section */
