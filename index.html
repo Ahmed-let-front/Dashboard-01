@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this first Dash for me" />
+    <meta name="author" content="Ahmed yasser" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="flex items-start">
+      <!-- start aside -->
+      <aside class="aside-shape">
+        <h3 class="main-head-sidebar text-[clamp(13px,2vw,18px)] my-[1rem_0]">
+          ahmed
+        </h3>
+        <ul class="flex flex-col gap-6 items-center md:items-start">
+          <li>
+            <a href="index.html" aria-label="Dashboard" aria-current="page">
+              <i class="fa-regular fa-chart-bar fa-fw" aria-hidden="true"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" aria-label="Settings">
+              <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" aria-label="Profile">
+              <i class="fa-regular fa-user fa-fw 2" aria-hidden="true"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html" aria-label="Projects">
+              <i
+                class="fa-solid fa-diagram-project fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html" aria-label="Courses">
+              <i
+                class="fa-solid fa-graduation-cap fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html" aria-label="Friends">
+              <i class="fa-regular fa-circle-user fa-fw" aria-hidden="true"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html" aria-label="Files">
+              <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html" aria-label="Plans">
+              <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- end aside -->
+      <div class="flex-1">
+        <!-- start header -->
+        <header
+          class="bg-box-bg h-30 flex justify-between items-center px-6 xsm:px-12 relative shadow-aside"
+        >
+          <form action="" role="search">
+            <div
+              class="relative before:absolute before:left-4 before:top-1/2 before:-translate-y-1/2 before:content-['\f002'] before:font-['Font_Awesome_6_Free'] before:text-grey-color"
+            >
+              <input
+                type="search"
+                name="search"
+                class="duration-300 rounded-2xl caret-black w-70 xsm:w-75 transition-[width] p-2 ps-14 bg-text-main focus:outline-0 focus:w-75 xsm:focus:w-85 placeholder:text-black/50 border-3 border-[#ccc] text-black placeholder:font-sans placeholder:font-[500]"
+                placeholder="Type A Keyword"
+                aria-placeholder="Type A Keyword"
+              />
+            </div>
+          </form>
+          <label for="user" class="md:hidden" aria-label="Toggle user menu">
+            <i class="fa-solid fa-bars cursor-pointer" aria-hidden="true"></i>
+          </label>
+          <input
+            type="checkbox"
+            id="user"
+            hidden
+            class="peer"
+            aria-label="Toggle user menu state"
+          />
+          <div
+            class="user-info flex gap-10 items-center opacity-0 scale-0 absolute pointer-events-none md:opacity-100 md:scale-100 md:pointer-events-auto md:static duration-300 md:flex peer-checked:block peer-checked:flex peer-checked:opacity-100 peer-checked:scale-100 peer-checked:pointer-events-auto bg-black top-full right-6 p-4 rounded-2xl before:absolute before:h-full before:w-[2px] before:bg-grey-color before:left-18 transition-all md:transition-none md:before:hidden md:bg-transparent z-2"
+            role="group"
+            aria-label="User controls"
+          >
+            <button
+              type="button"
+              aria-label="Unread notifications"
+              class="cursor-pointer relative after:absolute after:left-6 after:bottom-full after:bg-red-color after:size-4 after:rounded-full"
+            >
+              <i class="fa-regular fa-bell fa-lg" aria-hidden="true"></i>
+            </button>
+            <a
+              href="profile.html"
+              aria-label="User Profile"
+              class="cursor-pointer duration-300 transition-transform hover:scale-125"
+            >
+              <img
+                src="./src/imgs/avatar.png"
+                alt="User Avatar"
+                class="size-12 rounded-full"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </header>
+        <!-- end header -->
+        <main>
+          <!--start dashnoard shape  -->
+          <section class="p-4 xsm:p-10 bg-body-bg">
+            <h1 class="main-head-section">Dashboard</h1>
+            <div
+              class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(450px,1fr))] gap-10 justify-center"
+            >
+              <!-- start welcome box -->
+              <div
+                class="shadow-aside rad-articles flex flex-col gap-12 hover-animate"
+              >
+                <header
+                  class="bg-white text-black flex gap-8 justify-between p-8 items-start relative"
+                >
+                  <div class="text">
+                    <h2 class="text-4xl font-black my-[1rem_0]">
+                      Welcome
+                      <span class="pt-3 block font-[600] text-2xl">Ahmed</span>
+                    </h2>
+                  </div>
+                  <img
+                    src="./src/imgs/welcome.png"
+                    aria-hidden="true"
+                    class="w-80"
+                    loading="lazy"
+                  />
+                  <img
+                    src="./src/imgs/avatar.png"
+                    alt="user Avatar"
+                    class="size-24 rounded-full absolute -bottom-8 border-4 border-grey-color"
+                    loading="lazy"
+                  />
+                </header>
+                <div class="content p-8 flex flex-col gap-12">
+                  <div
+                    class="welcome-stats flex flex-col md:flex-row gap-8 p-8 my-[2rem_0] [border-block:1px_solid_#ccc]"
+                  >
+                    <div class="welcome-box">
+                      <span class="state-name">Ahmed yasser</span>
+                      <span class="state">Developer</span>
+                    </div>
+                    <div class="welcome-box">
+                      <span class="state-name">80</span>
+                      <span class="state">Projects</span>
+                    </div>
+                    <div class="welcome-box">
+                      <span class="state-name">$8500</span>
+                      <span class="state">Earned</span>
+                    </div>
+                  </div>
+                  <button
+                    class="bg-white rounded-2xl font-bold w-fit p-4 text-black self-end my-[0_2rem] duration-300 transition-colors hover:bg-white/50 cursor-pointer"
+                  >
+                    Porfile
+                  </button>
+                </div>
+              </div>
+              <!-- end welcome box -->
+              <!-- start Quick draft box -->
+              <div
+                class="flex flex-col gap-8 bg-body-bg rad-articles p-6 hover-animate shadow-aside"
+              >
+                <div class="text flex flex-col gap-3">
+                  <h2 class="font-black text-[3rem] text-white">Quick Draft</h2>
+                  <p class="text-white/70 font-bold">
+                    Write A Draft For Your Ideas
+                  </p>
+                </div>
+                <form action="" class="flex flex-col gap-10">
+                  <input
+                    type="text"
+                    placeholder="Title"
+                    aria-placeholder="title"
+                    class="bg-white p-4 focus:outline-0 rounded-[8px] placeholder:text-black/50 placeholder:font-bold text-black"
+                    name="title user"
+                  />
+                  <textarea
+                    placeholder="Your Thought"
+                    aria-placeholder="Your Thought"
+                    class="min-h-70 bg-white p-4 focus:outline-0 rounded-2xl placeholder:text-black/50 placeholder:font-bold text-black"
+                    name="User Thought"
+                  ></textarea>
+                  <button
+                    type="submit"
+                    class="bg-white rounded-2xl w-fit p-2 px-8 font-bold text-black cursor-pointer duration-300 transition-colors hover:bg-white/50 self-end"
+                  >
+                    save
+                  </button>
+                </form>
+              </div>
+              <!-- end Quick draft box -->
+              <!-- start yearly targets box -->
+              <div
+                class="rad-articles shadow-aside bg-body-bg px-8 py-12 flex flex-col gap-8 targets hover-animate"
+              >
+                <div class="flex flex-col gap-5">
+                  <h2 class="font-black text-5xl">Yearly Targets</h2>
+                  <p class="text-white/50 font-bold">Targets Of The Year</p>
+                </div>
+                <ul class="flex flex-col gap-8">
+                  <li>
+                    <div class="icon bg-blue-color/20 text-blue-color">
+                      <i
+                        class="fa-solid fa-dollar-sign fa-lg"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="heading">
+                      <h3>Money</h3>
+                      <span>$20.000</span>
+                      <div
+                        role="progressbar"
+                        aria-label="Money Target"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span class="prog bg-blue-color w-[80%]">
+                          <span aria-hidden="true" class="bg-blue-color/30"
+                            >80%</span
+                          >
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon bg-orange-color/20 text-orange-color">
+                      <i class="fa-solid fa-code fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="heading">
+                      <h3>Projects</h3>
+                      <span>24</span>
+                      <div
+                        role="progressbar"
+                        aria-label="Money Target"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span class="prog bg-orange-color w-[50%]">
+                          <span aria-hidden="true" class="bg-orange-color/30"
+                            >50%</span
+                          >
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon bg-green-color/20 text-green-color">
+                      <i class="fa-solid fa-user fa-lg" aria-hidden="true"></i>
+                    </div>
+                    <div class="heading">
+                      <h3>Team</h3>
+                      <span>$12</span>
+                      <div
+                        role="progressbar"
+                        aria-label="Money Target"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <span class="prog bg-green-color w-[75%]">
+                          <span aria-hidden="true" class="bg-green-color/30"
+                            >75%</span
+                          >
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end yearly targets box -->
+              <!-- start tickets box -->
+              <div
+                class="shadow-aside rad-articles bg-body-bg hover-animate p-12 tickets flex flex-col gap-12"
+              >
+                <div class="text flex flex-col gap-4">
+                  <h2 class="text-5xl font-black">Tickets Statistics</h2>
+                  <p class="text-white/50 font-bold">
+                    Everything About Support Tickets
+                  </p>
+                </div>
+                <ul
+                  class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center"
+                >
+                  <li>
+                    <i
+                      class="fa-regular fa-rectangle-list fa-2x text-orange-color"
+                    ></i>
+                    <div class="content">
+                      <span class="number">2500</span>
+                      <span class="state">Total</span>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-spinner fa-2x text-blue-color"></i>
+                    <div class="content">
+                      <span class="number">500</span>
+                      <span class="state">Pending</span>
+                    </div>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-regular fa-circle-check fa-2x text-green-color"
+                    ></i>
+                    <div class="content">
+                      <span class="number">1900</span
+                      ><span class="state">Closed</span>
+                    </div>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-regular fa-rectangle-xmark fa-2x text-red-color"
+                    ></i>
+                    <div class="content">
+                      <span class="number">100</span>
+                      <span class="state">Deleted</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end tickets box -->
+              <!-- start news box -->
+              <article class="shadow-aside hover-animate rad-articles">
+                <h2 class="font-black text-5xl my-[0_4rem] p-12 pb-0">
+                  Latest News
+                </h2>
+                <ul class="flex flex-col divide-y-1 divide-grey-color">
+                  <li>
+                    <div class="news-box pt-0">
+                      <img
+                        src="./src/imgs/news-01.png"
+                        aria-hidden="true"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h3>Created SASS Section</h3>
+                        <p>New SASS Examples & Tutorials</p>
+                      </div>
+                      <span>3 Days Ago </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="news-box">
+                      <img
+                        src="./src/imgs/news-02.png"
+                        aria-hidden="true"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h3>Changed The Design</h3>
+                        <p>A Brand New Website Design</p>
+                      </div>
+                      <span>5 Days Ago </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="news-box">
+                      <img
+                        src="./src/imgs/news-03.png"
+                        aria-hidden="true"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h3>Team Increased</h3>
+                        <p>3 Developers Joined The Team</p>
+                      </div>
+                      <span>7 Days Ago </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="news-box">
+                      <img
+                        src="./src/imgs/news-04.png"
+                        aria-hidden="true"
+                        loading="lazy"
+                      />
+                      <div>
+                        <h3>Added Payment Gateway</h3>
+                        <p>Many New Payment Gateways Added</p>
+                      </div>
+                      <span>9 Days Ago </span>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+              <!-- end news box -->
+              <!-- start latest taks box -->
+              <div
+                class="latest-tasks hover-animate rad-articles shadow-aside pb-12"
+              >
+                <h2 class="font-black text-5xl p-12 pb-16">Latest Tasks</h2>
+                <ul
+                  class="tasks-list flex flex-col divide-y-1 divide-grey-color"
+                >
+                  <li class="pt-0">
+                    <div class="info">
+                      <h3>Record One New Video</h3>
+                      <p>Record Python Create Exe Project</p>
+                    </div>
+                    <i
+                      class="fa-regular fa-trash-can cursor-pointer"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+                  <li>
+                    <div class="info">
+                      <h3>Write Article</h3>
+                      <p>Write Low Level vs High Level Languages</p>
+                    </div>
+                    <i
+                      class="fa-regular fa-trash-can cursor-pointer"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+                  <li>
+                    <div class="info">
+                      <h3>Finish Project</h3>
+                      <p>Publish Academy Programming Project</p>
+                    </div>
+                    <i
+                      class="fa-regular fa-trash-can cursor-pointer"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+                  <li>
+                    <div class="info">
+                      <h3 class="text-white/50">
+                        <del>Attend The Meeting</del>
+                      </h3>
+                      <p class="text-white/50 text-[13px]">
+                        <del>Attend The Project Business Analysis Meeting</del>
+                      </p>
+                    </div>
+                    <i
+                      class="fa-regular fa-trash-can cursor-pointer text-white/50"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+                  <li>
+                    <div class="info">
+                      <h3>Finish Lesson</h3>
+                      <p>Finish Teaching Flex Box</p>
+                    </div>
+                    <i
+                      class="fa-regular fa-trash-can cursor-pointer"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+                </ul>
+              </div>
+              <!-- end latest taks box -->
+              <!-- start top search items box -->
+              <div
+                class="hover-animate rad-articles shadow-aside p-12 flex flex-col gap-8 top-search"
+              >
+                <h2 class="font-black text-5xl">Top Search Items</h2>
+                <table>
+                  <thead class="h-20 font-bold text-white/50">
+                    <tr>
+                      <th class="text-left">Keyword</th>
+                      <th class="text-right">Search Count</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="k-name">Programming</td>
+                      <td class="text-right"><span class="badge">220</span></td>
+                    </tr>
+                    <tr>
+                      <td class="k-name">JavaScript</td>
+                      <td class="text-right"><span class="badge">180</span></td>
+                    </tr>
+                    <tr>
+                      <td class="k-name">PHP</td>
+                      <td class="text-right"><span class="badge">160</span></td>
+                    </tr>
+                    <tr>
+                      <td class="k-name">Code</td>
+                      <td class="text-right"><span class="badge">145</span></td>
+                    </tr>
+                    <tr>
+                      <td class="k-name">Design</td>
+                      <td class="text-right"><span class="badge">110</span></td>
+                    </tr>
+                    <tr>
+                      <td class="k-name">Logic</td>
+                      <td class="text-right"><span class="badge">95</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- end top search items box -->
+              <!-- start latest uploads -->
+              <div
+                class="latest-Uploads rad-articles shadow-aside hover-animate pb-8"
+              >
+                <h2 class="font-black text-5xl p-12">Latest Uploads</h2>
+                <ul class="flex flex-col flex-1 divide-y-1 divdie-grey-color">
+                  <li>
+                    <img
+                      src="./src/imgs/pdf.svg"
+                      aria-hidden="true"
+                      loading="lazy"
+                    />
+                    <div class="content">
+                      <h3>My-file.pdf</h3>
+                      <span>Elzero</span>
+                    </div>
+                    <span class="file-size">2.9mb</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./src/imgs/avi.svg"
+                      aria-hidden="true"
+                      loading="lazy"
+                    />
+                    <div class="content">
+                      <h3>My-Video-File.avi</h3>
+                      <span>Admin</span>
+                    </div>
+                    <span class="file-size">4.9mb</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./src/imgs/psd.svg"
+                      aria-hidden="true"
+                      loading="lazy"
+                    />
+                    <div class="content">
+                      <h3>My-Psd-File.pdf</h3>
+                      <span>Osama</span>
+                    </div>
+                    <span class="file-size">4.5mb</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./src/imgs/zip.svg"
+                      aria-hidden="true"
+                      loading="lazy"
+                    />
+                    <div class="content">
+                      <h3>My-Zip-File.pdf</h3>
+                      <span>User</span>
+                    </div>
+                    <span class="file-size">8.9mb</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./src/imgs/dll.svg"
+                      aria-hidden="true"
+                      loading="lazy"
+                    />
+                    <div class="content">
+                      <h3>My-DLL-File.pdf</h3>
+                      <span>Admin</span>
+                    </div>
+                    <span class="file-size">4.9mb</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./src/imgs/eps.svg"
+                      aria-hidden="true"
+                      loading="lazy"
+                    />
+                    <div class="content">
+                      <h3>My-Eps-File.pdf</h3>
+                      <span>Designer</span>
+                    </div>
+                    <span class="file-size">8.9mb</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- end latest uploads -->
+              <!-- start Last Project Progress -->
+              <div
+                class="rad-articles shadow-aside hover-animate p-14 flex flex-col gap-14 last-projects relative z-2"
+              >
+                <h2 class="font-black text-5xl">Last Project Progress</h2>
+                <ul
+                  class="flex flex-col gap-12 md:justify-between flex-1 relative before:absolute before:left-2 before:top-0 before:bg-blue-color before:h-full before:w-[2px]"
+                >
+                  <li><h3>Got The Project</h3></li>
+                  <li><h3>Started The Project</h3></li>
+                  <li><h3>The Project About To Finish</h3></li>
+                  <li class="test-the-project"><h3>Test The Project</h3></li>
+                  <li class="last-project">
+                    <h3>Finish The Project & Get Money</h3>
+                  </li>
+                </ul>
+                <img
+                  src="./src/imgs/project.png"
+                  aria-hidden="true"
+                  class="absolute bottom-0 h-60 opacity-70 right-20 -z-1 hidden md:block"
+                />
+              </div>
+              <!-- end Last Project Progress -->
+              <!-- start Reminders -->
+              <div
+                class="rad-articles shadow-aside p-12 hover-animate Reminders flex flex-col gap-12 md:ps-20"
+              >
+                <h2 class="font-black text-5xl">Reminders</h2>
+                <ul class="flex flex-col gap-6 flex-1 justify-between ps-6">
+                  <li class="after:bg-blue-color before:bg-blue-color">
+                    <h3>Check My Tasks List</h3>
+                    <span>28/09/2022 - 12:00am </span>
+                  </li>
+                  <li class="after:bg-green-color before:bg-green-color">
+                    <h3>Check My Projects</h3>
+                    <span>26/10/2022 - 12:00am</span>
+                  </li>
+                  <li class="after:bg-orange-color before:bg-orange-color">
+                    <h3>Call All My Clients</h3>
+                    <span>05/11/2022 - 12:00am</span>
+                  </li>
+                  <li class="after:bg-red-color before:bg-red-color">
+                    <h3>Finish The Development Workshop</h3>
+                    <span>20/12/2022 - 12:00am</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- end Reminders -->
+              <!-- start Latest Post -->
+              <article
+                class="rad-articles shadow-aside p-12 hover-animate flex flex-col gap-12"
+              >
+                <h2 class="font-black text-5xl">Latest Post</h2>
+                <header
+                  class="flex items-center gap-10 border-b-1 border-grey-color pb-14"
+                >
+                  <img
+                    src="./src/imgs/avatar.png"
+                    alt="user avatar"
+                    class="h-20"
+                    loading="lazy"
+                  />
+                  <div class="info flex flex-col gap-2">
+                    <span class="font-bold text-3xl">Ahmed yasser</span>
+                    <span class="text-white/50 font-bold text-[13px]"
+                      >About 3 Hours Ago</span
+                    >
+                  </div>
+                </header>
+                <p
+                  class="text-3xl leading-[1.7] font-[600] border-b-1 border-grey-color pb-14"
+                >
+                  You can fool all of the people some of the time, and some of
+                  the people all of the time, but you can't fool all of the
+                  people all of the time.
+                </p>
+                <footer
+                  class="flex justify-between items-center text-grey-color font-bold"
+                >
+                  <div class="likes flex gap-4 items-center">
+                    <i class="fa-regular fa-heart"></i> <span>1.8k</span>
+                  </div>
+                  <div class="comments flex gap-4 items-center">
+                    <i class="fa-regular fa-comments"></i> <span>500</span>
+                  </div>
+                </footer>
+              </article>
+              <!-- end Latest Post -->
+              <!-- start Social Media Stats -->
+              <div
+                class="rad-articles shadow-aside p-8 md:p-12 hover-animate flex flex-col gap-12 social-media-stats"
+              >
+                <h2 class="text-5xl font-black">Social Media Stats</h2>
+                <ul class="flex flex-col gap-4 flex-1">
+                  <li class="bg-blue-alt-color/20 group">
+                    <div class="icons bg-[#1da1f2]">
+                      <span class="sr-only">Twitter</span>
+                      <i
+                        class="fa-brands fa-x-twitter fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <span>90K Followers</span>
+                    <a class="bg-blue-color/70 hover:bg-blue-color/50" href="#"
+                      >Follow</a
+                    >
+                  </li>
+                  <li class="bg-[#1877f2]/40 group">
+                    <div class="icons bg-[#1877f2]">
+                      <span class="sr-only">Facebook</span>
+                      <i
+                        class="fa-brands fa-facebook-f fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <span>2M Like</span>
+                    <a class="bg-[#1877f2]/70 hover:bg-[#1877f2]/50" href="#"
+                      >Like</a
+                    >
+                  </li>
+                  <li class="bg-red-color/20 group">
+                    <div class="icons bg-red-color">
+                      <span class="sr-only">YouTube</span>
+                      <i
+                        class="fa-brands fa-youtube fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <span>1M Subs</span>
+                    <a class="bg-red-color/70 hover:bg-red-color/50" href="#"
+                      >Subscribe</a
+                    >
+                  </li>
+                  <li class="bg-blue-alt-color/40 group">
+                    <div class="icons bg-blue-color">
+                      <span class="sr-only">LinkedIn</span>
+                      <i
+                        class="fa-brands fa-linkedin fa-2x"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <span>70K Followers</span>
+                    <a class="bg-blue-color/70 hover:bg-blue-color/50" href="#"
+                      >Follow</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- end Social Media Stats -->
+              <!-- start projects -->
+              <div
+                class="col-span-full shadow-aside p-8 md:p-12 flex flex-col gap-16 rad-articles projects-article"
+              >
+                <h2 class="font-black text-5xl">Projects</h2>
+                <div class="overflow-x-auto">
+                  <table class="border-1 border-[#eee] min-w-[1000px] w-full">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Finish Date</th>
+                        <th>Client</th>
+                        <th>Price</th>
+                        <th>Team</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Ministry Wikipedia</td>
+                        <td>10 May 2022</td>
+                        <td>Ministry</td>
+                        <td>$5300</td>
+                        <td class="imgs">
+                          <img
+                            src="./src/imgs/team-01.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="./src/imgs/team-02.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="./src/imgs/team-03.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="./src/imgs/team-05.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                        </td>
+                        <td><span class="bg-orange-color/70">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <td>Elzero Shop</td>
+                        <td>12 Oct 2021</td>
+                        <td>Elzero Company</td>
+                        <td>$1500</td>
+                        <td class="imgs">
+                          <img
+                            src="./src/imgs/team-01.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="./src/imgs/team-02.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="./src/imgs/team-05.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                        </td>
+                        <td>
+                          <span class="bg-blue-color/70">In Progress</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Bouba App</td>
+                        <td>05 Sep 2021</td>
+                        <td>Bouba</td>
+                        <td>$800</td>
+                        <td class="imgs">
+                          <img
+                            src="./src/imgs/team-02.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="./src/imgs/team-03.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                        </td>
+                        <td>
+                          <span class="bg-green-color/70">Completed</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Mahmoud Website</td>
+                        <td>22 May 2021</td>
+                        <td>Mahmoud</td>
+                        <td>$600</td>
+                        <td class="imgs">
+                          <img
+                            src="./src/imgs/team-01.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="./src/imgs/team-02.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                        </td>
+                        <td>
+                          <span class="bg-green-color/70">Completed</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Sayed Website</td>
+                        <td>24 May 2021</td>
+                        <td>Sayed</td>
+                        <td>$300</td>
+                        <td class="imgs">
+                          <img
+                            src="./src/imgs/team-01.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="./src/imgs/team-03.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                        </td>
+                        <td><span class="bg-red-color/70">Rejected</span></td>
+                      </tr>
+                      <tr>
+                        <td>Arena Application</td>
+                        <td>01 Mar 2021</td>
+                        <td>Arena Company</td>
+                        <td>$2600</td>
+                        <td class="imgs">
+                          <img
+                            src="./src/imgs/team-01.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="./src/imgs/team-02.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="./src/imgs/team-03.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                          <img
+                            src="./src/imgs/team-05.png"
+                            alt="Team Member"
+                            loading="lazy"
+                          />
+                        </td>
+                        <td>
+                          <span class="bg-green-color/70">Completed</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- end projects -->
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

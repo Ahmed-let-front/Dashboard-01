@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this first Dash for me" />
+    <meta name="author" content="Ahmed yasser" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <div class="flex items-start Projects-page">
+      <!-- start aside -->
+      <aside class="aside-shape">
+        <h3 class="main-head-sidebar text-[clamp(13px,2vw,16px)] my-[1rem_0]">
+          ahmed
+        </h3>
+        <ul class="flex flex-col gap-6 items-center md:items-start">
+          <li>
+            <a href="index.html" aria-label="Dashboard">
+              <i class="fa-regular fa-chart-bar fa-fw" aria-hidden="true"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" aria-label="Settings">
+              <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" aria-label="Profile">
+              <i class="fa-regular fa-user fa-fw 2" aria-hidden="true"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html" aria-label="Projects" aria-current="page">
+              <i
+                class="fa-solid fa-diagram-project fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html" aria-label="Courses">
+              <i
+                class="fa-solid fa-graduation-cap fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html" aria-label="Friends">
+              <i class="fa-regular fa-circle-user fa-fw" aria-hidden="true"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html" aria-label="Files">
+              <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html" aria-label="Plans">
+              <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- end aside -->
+      <div class="flex-1">
+        <!-- start header -->
+        <header
+          class="bg-box-bg h-30 flex justify-between items-center px-6 xsm:px-12 relative shadow-aside"
+        >
+          <form action="" role="search">
+            <div
+              class="relative before:absolute before:left-4 before:top-1/2 before:-translate-y-1/2 before:content-['\f002'] before:font-['Font_Awesome_6_Free'] before:text-grey-color"
+            >
+              <input
+                type="search"
+                name="search"
+                class="duration-300 rounded-2xl caret-black w-70 xsm:w-75 transition-[width] p-2 ps-14 bg-text-main focus:outline-0 focus:w-75 xsm:focus:w-85 placeholder:text-black/50 border-3 border-[#ccc] text-black placeholder:font-sans placeholder:font-[500]"
+                placeholder="Type A Keyword"
+                aria-placeholder="Type A Keyword"
+              />
+            </div>
+          </form>
+          <label for="user" class="md:hidden" aria-label="Toggle user menu">
+            <i class="fa-solid fa-bars cursor-pointer" aria-hidden="true"></i>
+          </label>
+          <input
+            type="checkbox"
+            id="user"
+            hidden
+            class="peer"
+            aria-label="Toggle user menu state"
+          />
+          <div
+            class="user-info flex gap-10 items-center opacity-0 scale-0 absolute pointer-events-none md:opacity-100 md:scale-100 md:pointer-events-auto md:static duration-300 md:flex peer-checked:block peer-checked:flex peer-checked:opacity-100 peer-checked:scale-100 peer-checked:pointer-events-auto bg-black top-full right-6 p-4 rounded-2xl before:absolute before:h-full before:w-[2px] before:bg-grey-color before:left-18 transition-all md:transition-none md:before:hidden md:bg-transparent z-2"
+            role="group"
+            aria-label="User controls"
+          >
+            <button
+              type="button"
+              aria-label="Unread notifications"
+              class="cursor-pointer relative after:absolute after:left-6 after:bottom-full after:bg-red-color after:size-4 after:rounded-full"
+            >
+              <i class="fa-regular fa-bell fa-lg" aria-hidden="true"></i>
+            </button>
+            <a
+              href="profile.html"
+              aria-label="User Profile"
+              class="cursor-pointer duration-300 transition-transform hover:scale-125"
+            >
+              <img
+                src="./src/imgs/avatar.png"
+                alt="User Avatar"
+                class="size-12 rounded-full"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </header>
+        <main>
+          <!--start projects shape  -->
+          <section class="p-6 xsm:p-10 bg-body-bg">
+            <h1 class="main-head-section">Projects</h1>
+            <div
+              class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(450px,1fr))] gap-10 justify-center"
+            >
+              <div class="project rad-articles aside-shadow hover-animate">
+                <span class="date">15/10/2021</span>
+                <header class="info">
+                  <h2>Elzero Dashboard</h2>
+                  <p>
+                    Elzero Dashboard Project Design And Programming And Hosting
+                  </p>
+                </header>
+                <div class="team">
+                  <img src="./src/imgs/team-01.png" alt="Osama" /><img
+                    src="./src/imgs/team-02.png"
+                    alt="Ahmed"
+                  /><img src="./src/imgs/team-03.png" alt="Sayed" /><img
+                    src="./src/imgs/team-04.png"
+                    alt="Eman"
+                  /><img src="./src/imgs/team-05.png" alt="Maha" />
+                </div>
+                <div class="tags">
+                  <span>Programming</span><span>Design</span><span>Hosting</span
+                  ><span>Marketing</span>
+                </div>
+                <footer class="footer">
+                  <span
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Project progress"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    ><span class="w-[50%] bg-red-500"></span></span
+                  ><span class="price">$ 2500</span>
+                </footer>
+              </div>
+              <div class="project rad-articles aside-shadow hover-animate">
+                <span class="date">15/6/2022</span>
+                <header class="info">
+                  <h2>Academy Portal</h2>
+                  <p>Academy Portal Project Design And Programming</p>
+                </header>
+                <div class="team">
+                  <img src="./src/imgs/team-01.png" alt="Shady" /><img
+                    src="./src/imgs/team-02.png"
+                    alt="Ali"
+                  /><img src="./src/imgs/team-03.png" alt="Omar" />
+                </div>
+                <div class="tags">
+                  <span>Programming</span><span>Design</span>
+                </div>
+                <footer class="footer">
+                  <span
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Project progress"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    ><span class="w-[80%] bg-green-500"></span></span
+                  ><span class="price">$ 1800</span>
+                </footer>
+              </div>
+              <div class="project rad-articles aside-shadow hover-animate">
+                <span class="date">15/6/2022</span>
+                <header class="info">
+                  <h2>Chatting Application</h2>
+                  <p>Chatting Application Project Design</p>
+                </header>
+                <div class="team">
+                  <img src="./src/imgs/team-01.png" alt="Khaled" /><img
+                    src="./src/imgs/team-02.png"
+                    alt="Youssef"
+                  /><img src="./src/imgs/team-03.png" alt="Tarek" />
+                </div>
+                <div class="tags"><span>Design</span></div>
+                <footer class="footer">
+                  <span
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Project progress"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    ><span class="w-[100%] bg-blue-500"></span></span
+                  ><span class="price">$ 950</span>
+                </footer>
+              </div>
+              <div class="project rad-articles aside-shadow hover-animate">
+                <span class="date">15/6/2022</span>
+                <header class="info">
+                  <h2>Ahmed Dashboard</h2>
+                  <p>
+                    Ahmed Dashboard Project Design And Programming And Hosting
+                  </p>
+                </header>
+                <div class="team">
+                  <img src="./src/imgs/team-01.png" alt="Hassan" /><img
+                    src="./src/imgs/team-02.png"
+                    alt="Mona"
+                  /><img src="./src/imgs/team-03.png" alt="Nour" /><img
+                    src="./src/imgs/team-04.png"
+                    alt="Hoda"
+                  />
+                </div>
+                <div class="tags">
+                  <span>Programming</span><span>Design</span><span>Hosting</span
+                  ><span>Marketing</span>
+                </div>
+                <footer class="footer">
+                  <span
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Project progress"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    ><span class="w-[60%] bg-green-500"></span></span
+                  ><span class="price">$ 1700</span>
+                </footer>
+              </div>
+              <div class="project rad-articles aside-shadow hover-animate">
+                <span class="date">15/6/2022</span>
+                <header class="info">
+                  <h2>Ahmed Portal</h2>
+                  <p>Ahmed Portal Project Design And Programming</p>
+                </header>
+                <div class="team">
+                  <img src="./src/imgs/team-01.png" alt="Adel" /><img
+                    src="./src/imgs/team-02.png"
+                    alt="Ramy"
+                  /><img src="./src/imgs/team-03.png" alt="Sami" />
+                </div>
+                <div class="tags">
+                  <span>Programming</span><span>Design</span>
+                </div>
+                <footer class="footer">
+                  <span
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Project progress"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    ><span class="w-[70%] bg-green-500"></span></span
+                  ><span class="price">$ 850</span>
+                </footer>
+              </div>
+              <div class="project rad-articles aside-shadow hover-animate">
+                <span class="date">15/6/2022</span>
+                <header class="info">
+                  <h2>Mohamed Application</h2>
+                  <p>Mohamed Application Project Design</p>
+                </header>
+                <div class="team">
+                  <img src="./src/imgs/team-01.png" alt="Ziad" /><img
+                    src="./src/imgs/team-02.png"
+                    alt="Bahaa"
+                  /><img src="./src/imgs/team-03.png" alt="Kamal" />
+                </div>
+                <div class="tags"><span>Design</span></div>
+                <footer class="footer">
+                  <span
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Project progress"
+                    aria-valuenow="40"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    ><span class="w-[40%] bg-red-500"></span></span
+                  ><span class="price">$ 950</span>
+                </footer>
+              </div>
+              <div class="project rad-articles aside-shadow hover-animate">
+                <span class="date">15/6/2022</span>
+                <header class="info">
+                  <h2>Mohamed Dashboard</h2>
+                  <p>
+                    Mohamed Dashboard Project Design And Programming And Hosting
+                  </p>
+                </header>
+                <div class="team">
+                  <img src="./src/imgs/team-01.png" alt="Farid" /><img
+                    src="./src/imgs/team-02.png"
+                    alt="Gamal"
+                  /><img src="./src/imgs/team-03.png" alt="Hisham" /><img
+                    src="./src/imgs/team-04.png"
+                    alt="Ibrahim"
+                  />
+                </div>
+                <div class="tags">
+                  <span>Programming</span><span>Design</span><span>Hosting</span
+                  ><span>Marketing</span>
+                </div>
+                <footer class="footer">
+                  <span
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Project progress"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    ><span class="w-[60%] bg-green-500"></span></span
+                  ><span class="price">$ 1950</span>
+                </footer>
+              </div>
+              <div class="project rad-articles aside-shadow hover-animate">
+                <span class="date">15/6/2022</span>
+                <header class="info">
+                  <h2>Mohamed Portal</h2>
+                  <p>Mohamed Portal Project Design And Programming</p>
+                </header>
+                <div class="team">
+                  <img src="./src/imgs/team-01.png" alt="Jalal" /><img
+                    src="./src/imgs/team-02.png"
+                    alt="Kareem"
+                  /><img src="./src/imgs/team-03.png" alt="Loay" />
+                </div>
+                <div class="tags">
+                  <span>Programming</span><span>Design</span>
+                </div>
+                <footer class="footer">
+                  <span
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Project progress"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    ><span class="w-[70%] bg-green-500"></span></span
+                  ><span class="price">$ 1650</span>
+                </footer>
+              </div>
+              <div class="project rad-articles aside-shadow hover-animate">
+                <span class="date">15/6/2022</span>
+                <header class="info">
+                  <h2>Ahmed Application</h2>
+                  <p>Ahmed Application Project Design</p>
+                </header>
+                <div class="team">
+                  <img src="./src/imgs/team-01.png" alt="Magdy" /><img
+                    src="./src/imgs/team-02.png"
+                    alt="Nader"
+                  /><img src="./src/imgs/team-03.png" alt="Raouf" />
+                </div>
+                <div class="tags"><span>Design</span></div>
+                <footer class="footer">
+                  <span
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Project progress"
+                    aria-valuenow="40"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    ><span class="w-[40%] bg-green-500"></span></span
+                  ><span class="price">$ 950</span>
+                </footer>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

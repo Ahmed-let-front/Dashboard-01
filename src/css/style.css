@@ -1,0 +1,876 @@
+/* Start Tailwind Imports */
+@import "tailwindcss";
+@custom-variant hover (&:hover);
+/* End Tailwind Imports */
+/* Start Fonts Setup */
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2")
+    format("woff2");
+}
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2")
+    format("woff2");
+}
+/* End Fonts Setup */
+/* Start Theme Variables */
+@theme {
+  --color-blue-color: #0075ff;
+  --color-blue-alt-color: #0d69d5;
+  --color-orange-color: #f59e0b;
+  --color-green-color: #22c55e;
+  --color-red-color: #f44336;
+  --color-grey-color: #888888;
+  --color-body-bg: #121212;
+  --color-box-bg: #1e1e1e;
+  --color-hover-bg: #2d2d2d;
+  --color-text-main: #ffffff;
+  --shadow-aside:
+    0 20px 25px -5px rgba(0, 0, 0, 0.8), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+  --breakpoint-xsm: 370px;
+  --breakpoint-sm: 500px;
+  --breakpoint-3xl: 137.5rem;
+  --breakpoint-xl: 62.5rem;
+}
+/* End Theme Variables */
+/* Start Base Layer */
+@layer base {
+  /* Start Body Setup */
+  body {
+    font-family: "Open Sans Variable", sans-serif;
+    @apply text-2xl bg-body-bg text-text-main before:fixed before:top-0 before:left-0 before:w-0 before:h-2 before:z-4 before:bg-[#ddd] before:rounded-tr-2xl before:rounded-br-2xl before:animate-[fill-bar_linear] before:[animation-timeline:scroll()];
+  }
+  /* End Body Setup */
+  /* Start Scrollbar Customization */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: var(--color-box-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-text-main);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  /* End Scrollbar Customization */
+  /* Start Active Sidebar Item */
+  .aside-shape li:has(a[aria-current="page"]) {
+    background-color: var(--color-hover-bg);
+  }
+  /* End Active Sidebar Item */
+  /* Start Global HTML Rules */
+  html {
+    font-size: 62.5%;
+  }
+  /* End Global HTML Rules */
+}
+/* End Base Layer */
+/* Start Components Layer */
+@layer components {
+  /* Start Sidebar Component */
+  .aside-shape {
+    @apply shadow-aside bg-box-bg sticky top-0 left-0 z-2 flex flex-col gap-8 md:gap-25 min-h-lvh w-fit p-4 md:p-6 md:w-80;
+    ul {
+      span {
+        @apply hidden md:block font-[500];
+      }
+      li {
+        @apply w-fit md:w-full h-16 cursor-pointer p-4 rounded-2xl duration-300 transition-colors hover:bg-hover-bg;
+      }
+      a {
+        @apply flex gap-4 items-center;
+      }
+    }
+  }
+  /* End Sidebar Component */
+  /* Start Typography Components */
+  .main-head-sidebar {
+    @apply capitalize font-bold text-[clamp(13px,5vw,18px)] relative text-center after:absolute after:w-32 after:h-[3px] after:bg-text-main after:top-[calc(100%_+_20px)] after:left-1/2 after:-translate-1/2 before:absolute before:left-1/2 before:-translate-x-1/2 before:top-[calc(100%_+_10px)] before:size-8 before:bg-text-main before:border-4 before:border-box-bg before:rounded-full before:z-2 before:hidden md:before:block after:hidden md:after:block;
+  }
+  .main-head-section {
+    @apply font-[700] my-[0_6rem] text-5xl relative w-fit before:absolute before:top-[calc(100%_+_20px)] before:w-40 before:h-[3px] before:bg-text-main  after:absolute after:top-[calc(100%_+_20px)] after:w-[30px] after:h-[3px] after:bg-black after:left-0;
+  }
+  /* End Typography Components */
+  /* Start Hover Animate Utility */
+  .hover-animate {
+    @apply duration-300 transition-transform hover:-translate-y-4;
+  }
+  /* End Hover Animate Utility */
+  /* Start Dashboard Page */
+  /* Start Welcome Component */
+  .welcome-box {
+    @apply flex flex-col gap-2 md:gap-4 flex-1 text-center;
+    .state-name {
+      @apply font-bold;
+    }
+    .state {
+      @apply text-grey-color;
+    }
+  }
+  /* End Welcome Component */
+  /* Start Targets Component */
+  .targets {
+    ul {
+      li {
+        @apply flex items-center gap-12;
+        .icon {
+          @apply size-32 rounded-2xl grid place-items-center shrink-0;
+        }
+        .heading {
+          @apply flex flex-col gap-5 w-full;
+        }
+        h3 {
+          @apply font-bold text-white/50;
+        }
+        span {
+          @apply font-bold text-2xl;
+        }
+        [role="progressbar"] {
+          @apply bg-grey-color h-4 rounded-2xl relative;
+          .prog {
+            @apply absolute h-full rounded-2xl;
+            animation: fill-target linear forwards;
+            animation-timeline: view();
+            animation-range: entry 10% cover 40%;
+            span {
+              @apply absolute -top-15 right-0 translate-x-1/2 p-[2px_5px] hidden sm:block rounded-[6px] text-[12px];
+            }
+          }
+        }
+      }
+    }
+  }
+  /* End Targets Component */
+  /* Start Tickets Component */
+  .tickets {
+    ul {
+      li {
+        @apply p-6 rounded-2xl border-1 border-[#ccc] flex flex-col gap-8 items-center;
+      }
+      .content {
+        @apply flex flex-col gap-4 items-center;
+        .number {
+          @apply font-bold text-5xl;
+        }
+        .state {
+          @apply text-white/50 font-bold;
+        }
+      }
+    }
+  }
+  /* End Tickets Component */
+  /* Start News Component */
+  .news-box {
+    @apply flex flex-col gap-8 text-center md:flex-row md:text-left items-center px-12 py-13 2xl:py-8 3xl:py-13;
+    img {
+      @apply w-40 rounded-2xl;
+    }
+    div {
+      @apply flex flex-col gap-3 flex-1;
+      h3 {
+        @apply font-bold text-2xl;
+      }
+      p {
+        @apply font-bold text-white/50 text-[1.4rem];
+      }
+    }
+    span {
+      @apply p-2 rounded-[5px] font-bold bg-text-main text-black text-[1.2rem];
+    }
+  }
+  /* End News Component */
+  /* Start Latest Tasks Component */
+  .latest-tasks {
+    .tasks-list {
+      li {
+        @apply flex flex-col text-center gap-12 sm:flex-row sm:text-left sm:gap-0 items-center justify-between px-12 py-8 2xl:py-5 3xl:py-8;
+        h3 {
+          @apply font-bold text-2xl;
+        }
+        p {
+          @apply text-white/70 font-bold;
+        }
+        .info {
+          @apply flex flex-col gap-4;
+        }
+      }
+    }
+  }
+  /* End Latest Tasks Component */
+  /* Start Top Search Component */
+  .top-search {
+    table {
+      tbody {
+        .k-name {
+          @apply font-bold sm:text-3xl;
+        }
+        .badge {
+          @apply bg-grey-color/40 p-2 rounded-[5px] font-bold;
+        }
+        tr {
+          @apply h-27;
+        }
+      }
+    }
+  }
+  /* End Top Search Component */
+  /* Start Latest Uploads Component */
+  .latest-Uploads {
+    ul {
+      li {
+        @apply flex items-center flex-col sm:flex-row gap-8 relative px-12 py-6 text-center sm:text-left;
+        img {
+          @apply h-14;
+        }
+        .content {
+          @apply flex flex-col gap-2;
+          h3 {
+            @apply font-bold text-2xl;
+          }
+          span {
+            @apply font-bold text-white/50 text-2xl;
+          }
+        }
+        .file-size {
+          @apply absolute right-12 bg-white text-black font-bold p-2 rounded-2xl text-[12px];
+        }
+      }
+    }
+  }
+  /* End Latest Uploads Component */
+  /* Start Last Projects Component */
+  .last-projects {
+    ul {
+      li {
+        @apply font-bold relative ps-18 before:absolute before:size-8 before:top-0 before:-left-2 before:bg-blue-color before:outline-2 before:outline-blue-color before:outline-offset-4 before:rounded-full before:z-2 text-[clamp(1.2rem,2vw,1.6rem)];
+      }
+      .test-the-project {
+        @apply before:animate-[fill-circle_ease-in-out_1.5s_infinite] before:bg-zinc-800;
+      }
+      .last-project {
+        @apply before:bg-zinc-800 before:outline-offset-0 before:size-12 before:-left-4;
+      }
+    }
+  }
+  /* End Last Projects Component */
+  /* Start Reminders Component */
+  .Reminders {
+    ul {
+      li {
+        @apply flex flex-col gap-4 ps-14 relative before:absolute before:h-full before:w-[2px] before:left-4 before:top-0 after:absolute after:top-1/2 after:-left-9 after:size-6 after:-translate-y-1/2 after:rounded-full;
+        h3 {
+          @apply font-bold;
+        }
+        span {
+          @apply text-white/50 font-bold;
+        }
+      }
+    }
+  }
+  /* End Reminders Component */
+  /* Start Social Media Stats Component */
+  .social-media-stats {
+    ul {
+      li {
+        @apply rounded-2xl overflow-hidden flex justify-between items-center gap-6 md:gap-0 relative p-8 flex-col sm:flex-row;
+        .icons {
+          @apply absolute left-0 top-0 grid place-items-center h-full p-4 duration-300 transition-transform cursor-pointer;
+          i {
+            @apply duration-300 transition-transform group-hover:rotate-20;
+          }
+        }
+        span {
+          @apply font-bold ms-24;
+        }
+        a {
+          @apply px-4 py-2 font-bold rounded-2xl duration-300 transition-colors ms-30 md:ms-0;
+        }
+      }
+    }
+  }
+  /* End Social Media Stats Component */
+  /* Start Projects Article Component */
+  .projects-article {
+    div::-webkit-scrollbar {
+      height: 6px;
+    }
+    table {
+      thead {
+        @apply bg-grey-color/70;
+        th {
+          @apply p-6;
+        }
+      }
+      tbody {
+        tr {
+          @apply transition-colors duration-300 bg-body-bg/50 hover:bg-[#323232];
+        }
+        td {
+          @apply p-6 border-b-1 border-l-1 border-grey-color;
+        }
+        .imgs {
+          @apply flex;
+          img {
+            @apply -ms-8;
+          }
+          img:first-child {
+            @apply ms-0;
+          }
+        }
+      }
+      img {
+        @apply h-16 rounded-full border-3 border-white;
+      }
+      span {
+        @apply px-4 py-2 rounded-2xl font-bold text-[13px];
+      }
+    }
+  }
+  /* End Projects Article Component */
+  /* End Dashboard Page */
+  /* Start Settings Page */
+  /* Start Toggle Switch Component */
+  .toggle-switch {
+    @apply bg-grey-color w-35 h-13 rounded-4xl cursor-pointer relative before:absolute before:size-10 before:rounded-full before:top-1/2 before:-translate-y-1/2 before:left-2 before:bg-white before:text-grey-color before:transition-all before:duration-300 flex items-center justify-center peer-checked:bg-blue-color peer-checked:before:translate-x-[56px] peer-checked:before:text-blue-color;
+  }
+  .toggle-switch::before {
+    content: "\f00d" !important;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    display: grid;
+    place-items: center;
+  }
+  label:has(input:checked) div::before {
+    content: "\f00c" !important;
+  }
+  /* End Toggle Switch Component */
+  .settings-page {
+    /* Start General Info Section */
+    .general-info {
+      .input {
+        @apply rounded-4xl flex flex-col gap-6 w-full min-w-0;
+        label {
+          @apply font-bold text-white/80;
+        }
+        input {
+          @apply focus:outline-0 border-2 rounded-3xl border-grey-color p-6 w-full;
+        }
+      }
+    }
+    /* End General Info Section */
+  }
+  /* Start Security Info Section */
+  .security-info {
+    .infOs {
+      .info {
+        @apply flex flex-col gap-8 sm:flex-row sm:justify-between sm:gap-0 sm:items-center items-start py-10;
+        .text {
+          @apply flex flex-col gap-3;
+        }
+        h3 {
+          @apply font-bold;
+        }
+        p {
+          @apply font-bold text-white/50;
+        }
+        a {
+          @apply rounded-2xl duration-300 transition-colors p-4 font-bold;
+        }
+      }
+    }
+  }
+  /* End Security Info Section */
+  /* Start Social Media Section */
+  .social-media {
+    .box-s {
+      @apply px-4 bg-grey-color/80 rounded-2xl flex justify-between items-center relative overflow-hidden;
+      input {
+        @apply flex-1 py-8 focus:outline-0 w-full font-bold placeholder:text-white/80 placeholder:font-[400] ps-20 placeholder:text-[clamp(1.2rem,4vw,1.5rem)];
+      }
+      label {
+        @apply absolute left-0 top-0 h-full grid place-items-center p-4 bg-black text-3xl peer-focus:text-black peer-focus:bg-white duration-300 transition-colors;
+        i {
+          @apply duration-300 transition-colors;
+        }
+      }
+    }
+  }
+  /* End Social Media Section */
+  /* Start Widgets Control Section */
+  .widgets-control {
+    label {
+      @apply relative flex items-center gap-6 font-bold cursor-pointer
+      before:block 
+      before:left-0 
+      before:top-0 
+      before:size-8 
+      before:rounded-[5px] 
+      before:border-2 
+      before:border-grey-color
+      before:cursor-pointer
+      before:duration-300
+      before:transition-colors
+      hover:before:border-blue-color
+      after:absolute
+      after:bg-blue-color
+      after:rounded-[2px]
+      after:size-[calc(2rem_-_4px)]
+      after:scale-0
+      after:duration-300
+      after:will-change-transform
+      after:left-[2px]
+      after:top-[2px]
+      after:font-black
+      after:font-['Font_Awesome_6_Free']
+      after:grid
+      after:place-items-center
+      after:text-[12px];
+      &:has(input:checked)::after {
+        content: "\f00c";
+        transform: rotate(1turn);
+        scale: 100%;
+      }
+      &:has(input:checked)::before {
+        border-color: var(--color-blue-color);
+      }
+    }
+    input {
+      @apply sr-only;
+    }
+  }
+  /* End Widgets Control Section */
+  /* Start Backup Manager Section */
+  .backup-manager {
+    .time {
+      label {
+        @apply flex items-center gap-8 relative font-bold cursor-pointer ps-5
+      before:block
+      before:bg-blue-color
+      before:rounded-full
+      before:size-6
+      before:scale-0
+      before:left-3
+      before:duration-300
+      before:transition-transform
+      after:absolute
+      after:left-2
+      after:border-2
+      after:border-grey-color
+      after:size-12
+      after:rounded-full
+      after:duration-300
+      after:transition-colors
+      after:top-1/2
+      after:-translate-y-1/2
+      cursor-pointer;
+        &:has(input:checked)::before {
+          outline-color: var(--color-blue-color);
+          scale: 100%;
+        }
+        &:has(input:checked)::after {
+          border-color: var(--color-blue-color);
+        }
+      }
+    }
+    /* Start Servers List */
+    .servers-list {
+      li {
+        @apply h-40 rounded-2xl border-2 border-grey-color w-full  duration-300 transition-colors cursor-pointer;
+        &:has(input:checked) {
+          @apply border-blue-400;
+        }
+        &:has(input:checked) label {
+          @apply text-blue-400;
+        }
+        label {
+          @apply font-bold duration-300 transition-colors flex flex-col gap-6 justify-center items-center size-full cursor-pointer;
+        }
+      }
+    }
+    /* End Servers List */
+  }
+  /* End Backup Manager Section */
+  /* End Settings Page */
+  /* Start Profile Page */
+  .profile-page {
+    /* Start Stars Component */
+    .starts {
+      i {
+        @apply text-orange-color;
+      }
+    }
+    /* End Stars Component */
+    /* Start Profile Config Component */
+    .config {
+      .details-group {
+        @apply text-[clamp(1.3rem,3vw,1.4rem)] p-10 flex flex-col gap-4 duration-300 transition-colors hover:bg-grey-color/10 rounded-tl-2xl rounded-tr-2xl;
+        .content {
+          @apply flex flex-col xl:flex-row gap-6 xl:gap-25 items-center;
+        }
+        .group-title {
+          @apply font-black text-white/80;
+        }
+        .left {
+          @apply flex flex-col gap-6;
+        }
+        .right {
+          @apply flex flex-col gap-6 items-center xl:items-start;
+          .toggle-switch {
+            @apply h-12 before:size-8 before:text-[10px];
+          }
+        }
+        .info-row {
+          @apply font-bold text-text-main/50;
+          .info-value {
+            @apply text-white;
+          }
+        }
+      }
+    }
+    /* End Profile Config Component */
+    /* Start Skills List Component */
+    .skills-list {
+      .skills-row {
+        @apply p-8 flex items-center  gap-4;
+        .skill-badge {
+          @apply font-bold bg-black p-3 rounded-2xl;
+        }
+      }
+    }
+    /* End Skills List Component */
+    /* Start Activities List Component */
+    .activities-list {
+      .activity-item {
+        @apply flex gap-8 flex-col text-center xl:text-left xl:flex-row items-center p-8;
+      }
+      .activity-info {
+        @apply flex flex-col gap-4;
+        h3 {
+          @apply font-bold text-3xl;
+        }
+        p {
+          @apply text-white/50 font-bold;
+        }
+      }
+      .activity-icon {
+        @apply size-25;
+      }
+      .activity-date {
+        @apply flex-1 xl:items-end  flex flex-col gap-4;
+        .time {
+          @apply font-[600] text-white/50;
+        }
+        .day {
+          @apply font-bold;
+        }
+      }
+    }
+    /* End Activities List Component */
+  }
+  /* End Profile Page */
+  /* Start Projects Page */
+  .Projects-page {
+    /* Start Project Card Component */
+    .project {
+      @apply relative p-10 flex flex-col gap-8;
+      .date {
+        @apply absolute top-5 right-7 font-bold text-white/50;
+      }
+      .info {
+        @apply flex flex-col gap-4 my-[3rem_0] xsm:my-[1.5rem_0];
+        h2 {
+          @apply font-black text-[clamp(1.3rem,4vw,1.4rem)];
+        }
+        p {
+          @apply font-bold text-text-main/50;
+        }
+      }
+      .team {
+        @apply border-b border-grey-color py-8 flex items-center;
+        img {
+          @apply rounded-full size-15 border-2 border-white relative;
+          &:not(:first-child) {
+            @apply -ms-8 hover:z-10;
+          }
+        }
+      }
+      .tags {
+        @apply flex items-center gap-4 justify-end flex-wrap;
+        span {
+          @apply p-3 rounded-2xl text-white font-bold bg-black;
+        }
+      }
+      .footer {
+        @apply border-t border-grey-color flex items-center justify-between pt-8;
+        .price {
+          @apply font-bold text-white/50;
+        }
+        .progress {
+          @apply rounded-2xl overflow-hidden h-[7px] bg-gray-200 w-1/2 relative;
+          span {
+            @apply absolute top-0 left-0 h-full rounded-2xl block;
+          }
+        }
+      }
+    }
+    /* End Project Card Component */
+  }
+  /* End Projects Page */
+
+  /* Start Courses Page */
+  .courses-page {
+    /* Start Course Card Component */
+    .course-card {
+      @apply relative flex flex-col gap-12 justify-between;
+      .card-img {
+        @apply relative;
+        .course-thumb {
+          @apply w-full;
+        }
+        .instructor-avatar {
+          @apply absolute left-7 top-7 size-25 rounded-full border-2 border-white;
+        }
+      }
+      .card-body {
+        @apply flex flex-col gap-6 p-10 -mt-8;
+        .course-title {
+          @apply text-[clamp(1.3rem,4vw,1.5rem)] font-black;
+        }
+        .course-desc {
+          @apply font-bold text-white/50;
+        }
+      }
+      .card-footer {
+        @apply relative border-t-1 border-grey-color p-6 flex items-center justify-between;
+        .info-btn {
+          @apply absolute -top-1/2 left-1/2 -translate-x-1/2 rounded-2xl p-4 bg-black text-white font-bold duration-300 transition-colors hover:bg-text-main hover:text-black cursor-pointer;
+        }
+        .stat {
+          @apply flex items-center gap-4;
+          .icon {
+            @apply text-grey-color;
+          }
+          span {
+            @apply font-bold text-white/50;
+          }
+        }
+      }
+    }
+    /* End Course Card Component */
+  }
+  /* End Courses Page */
+  /* Start Friends Page */
+  .friends-page {
+    /* Start Friend Card Component */
+    .friend-card {
+      @apply relative p-12 flex flex-col justify-between;
+      .contact-actions {
+        @apply absolute left-7 top-7 flex items-center gap-4;
+        button {
+          @apply p-4 rounded-full bg-black text-white cursor-pointer duration-300 transition-colors hover:bg-white hover:text-black;
+        }
+      }
+      .profile-info {
+        @apply flex flex-col items-center gap-4 border-b-1 border-grey-color p-12 my-[2rem_0] text-center md:text-left;
+        .profile-img {
+          @apply rounded-full h-40;
+        }
+        .name {
+          @apply text-[clamp(1.3rem,4vw,1.5rem)] font-black;
+        }
+        .title {
+          @apply font-bold text-text-main/50;
+        }
+      }
+      .stats-section {
+        @apply flex justify-between items-center flex-col gap-10 md:flex-row border-b-1 border-grey-color py-12;
+        ul li {
+          @apply flex items-center gap-4  md:text-left;
+          span {
+            @apply font-bold text-text-main/50;
+          }
+        }
+        .vip-badge {
+          @apply font-bold text-orange-color/70 text-7xl uppercase;
+        }
+      }
+      .card-footer {
+        @apply flex items-center flex-col md:flex-row justify-between pt-8 gap-6;
+        .join-date {
+          @apply font-bold text-[1.4rem] text-text-main/50;
+        }
+        .action-buttons {
+          @apply flex items-center gap-4;
+          button {
+            @apply p-3 rounded-2xl font-bold text-white transition-opacity hover:opacity-80 cursor-pointer text-[14px];
+          }
+          .profile-btn {
+            @apply bg-blue-color/80;
+          }
+          .remove-btn {
+            @apply bg-red-color/80;
+          }
+        }
+      }
+    }
+    /* End Friend Card Component */
+  }
+  /* End Friends Page */
+  /* Start Files Page */
+  .files-page {
+    /* Start File Card Component */
+    .file-card {
+      @apply relative flex flex-col gap-6 p-10 text-[clamp(1.3rem,4vw,1.4rem)];
+      .download-icon {
+        @apply absolute top-5 left-5 text-grey-color cursor-pointer duration-300 transition-colors hover:text-blue-color;
+      }
+      .file-img {
+        @apply h-20 duration-200 transition-transform group-hover:rotate-8;
+      }
+      .file-meta {
+        @apply flex flex-col items-center gap-2 border-b-1 border-grey-color pb-6;
+        .file-name {
+          @apply font-black;
+        }
+        .uploader {
+          @apply font-bold text-text-main/50;
+        }
+      }
+      .file-footer {
+        @apply flex items-center justify-between;
+        span {
+          @apply font-bold text-text-main/50;
+        }
+      }
+    }
+    /* End File Card Component */
+    /* Start Files Statistics Component */
+    .files-statistics {
+      /* Start Box Component */
+      .box {
+        @apply p-4 rounded-2xl border-1 border-grey-color text-center xl:text-left relative flex items-center justify-between gap-2 flex-col xl:flex-row;
+        .icon {
+          @apply p-6 rounded-2xl;
+        }
+        .content {
+          @apply flex items-center gap-4 flex-col xl:flex-row;
+        }
+        .text {
+          @apply flex flex-col gap-2;
+          h3 {
+            @apply font-bold;
+          }
+          span {
+            @apply font-bold text-text-main/50;
+          }
+        }
+        .gp {
+          @apply font-bold text-text-main/50;
+        }
+      }
+      /* End Box Component */
+    }
+    /* End Files Statistics Component */
+  }
+  /* End Files Page */
+  /* Start Plans Page */
+  .plans-page {
+    /* Start Plan Card Component */
+    .plan-card {
+      @apply relative p-10 flex flex-col gap-14;
+      .plan-header {
+        @apply grid place-items-center rounded-3xl outline-2 outline-offset-6 py-8 border-3 border-white text-white;
+        .plan-title {
+          @apply text-[clamp(1.5rem,4vw,2.5rem)] font-black;
+        }
+        .price {
+          @apply text-6xl font-bold relative w-fit mx-auto;
+          .dollar {
+            @apply text-3xl absolute -left-6 top-0;
+          }
+        }
+      }
+      .plan-features {
+        @apply flex flex-col  gap-12 divide-y border-b-1 border-grey-color divide-grey-color;
+        li {
+          @apply relative flex items-center gap-4 py-6;
+          .yes {
+            @apply text-emerald-500 text-lg;
+          }
+          .no {
+            @apply text-red-color text-lg;
+          }
+          .text {
+            @apply font-bold text-text-main/50 text-[14px];
+          }
+          .help {
+            @apply absolute right-0 top-1/2 -translate-y-1/2 text-grey-color cursor-pointer;
+          }
+        }
+      }
+      .join-btn {
+        @apply w-fit font-bold py-4 px-8 rounded-md text-white transition-colors duration-300 cursor-pointer;
+      }
+      .current-plan {
+        @apply text-center block font-bold text-text-main/50 text-[1.5rem];
+      }
+      &.free {
+        .plan-header {
+          @apply bg-emerald-600 outline-emerald-600;
+        }
+        .join-btn {
+          @apply bg-emerald-600/70 hover:bg-emerald-500;
+        }
+      }
+      &.basic {
+        .plan-header {
+          @apply bg-indigo-600 outline-indigo-600;
+        }
+        .join-btn {
+          @apply bg-indigo-600 hover:bg-indigo-700;
+        }
+      }
+      &.premium {
+        .plan-header {
+          @apply bg-purple-600 outline-purple-600;
+        }
+      }
+    }
+    /* End Plan Card Component */
+  }
+  /* End Plans Page */
+}
+/* End Components Layer */
+/* Start Utilities Layer */
+@layer utilities {
+  /* Start Rad Articles Utility */
+  .rad-articles {
+    @apply rounded-4xl overflow-hidden bg-box-bg/80;
+  }
+  /* End Rad Articles Utility */
+}
+/* End Utilities Layer */
+/* Start Keyframes Animations */
+@keyframes fill-bar {
+  to {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+@keyframes fill-circle {
+  to {
+    background-color: var(--color-blue-color);
+  }
+}
+/* End Keyframes Animations */

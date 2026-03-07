@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this first Dash for me" />
+    <meta name="author" content="Ahmed yasser" />
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="flex items-start settings-page">
+      <!-- start aside -->
+      <aside class="aside-shape">
+        <h3 class="main-head-sidebar text-[clamp(13px,2vw,18px)] my-[1rem_0]">
+          ahmed
+        </h3>
+        <ul class="flex flex-col gap-6 items-center md:items-start">
+          <li>
+            <a href="index.html" aria-label="Dashboard">
+              <i class="fa-regular fa-chart-bar fa-fw" aria-hidden="true"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" aria-label="Settings" aria-current="page">
+              <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" aria-label="Profile">
+              <i class="fa-regular fa-user fa-fw 2" aria-hidden="true"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html" aria-label="Projects">
+              <i
+                class="fa-solid fa-diagram-project fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html" aria-label="Courses">
+              <i
+                class="fa-solid fa-graduation-cap fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html" aria-label="Friends">
+              <i class="fa-regular fa-circle-user fa-fw" aria-hidden="true"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html" aria-label="Files">
+              <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html" aria-label="Plans">
+              <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- end aside -->
+      <div class="flex-1">
+        <!-- start header -->
+        <header
+          class="bg-box-bg h-30 flex justify-between items-center px-6 xsm:px-12 relative shadow-aside"
+        >
+          <form action="" role="search">
+            <div
+              class="relative before:absolute before:left-4 before:top-1/2 before:-translate-y-1/2 before:content-['\f002'] before:font-['Font_Awesome_6_Free'] before:text-grey-color"
+            >
+              <input
+                type="search"
+                name="search"
+                class="duration-300 rounded-2xl caret-black w-70 xsm:w-75 transition-[width] p-2 ps-14 bg-text-main focus:outline-0 focus:w-75 xsm:focus:w-85 placeholder:text-black/50 border-3 border-[#ccc] text-black placeholder:font-sans placeholder:font-[500]"
+                placeholder="Type A Keyword"
+                aria-placeholder="Type A Keyword"
+              />
+            </div>
+          </form>
+          <label for="user" class="md:hidden" aria-label="Toggle user menu">
+            <i class="fa-solid fa-bars cursor-pointer" aria-hidden="true"></i>
+          </label>
+          <input
+            type="checkbox"
+            id="user"
+            hidden
+            class="peer"
+            aria-label="Toggle user menu state"
+          />
+          <div
+            class="user-info flex gap-10 items-center opacity-0 scale-0 absolute pointer-events-none md:opacity-100 md:scale-100 md:pointer-events-auto md:static duration-300 md:flex peer-checked:block peer-checked:flex peer-checked:opacity-100 peer-checked:scale-100 peer-checked:pointer-events-auto bg-black top-full right-6 p-4 rounded-2xl before:absolute before:h-full before:w-[2px] before:bg-grey-color before:left-18 transition-all md:transition-none md:before:hidden md:bg-transparent z-2"
+            role="group"
+            aria-label="User controls"
+          >
+            <button
+              type="button"
+              aria-label="Unread notifications"
+              class="cursor-pointer relative after:absolute after:left-6 after:bottom-full after:bg-red-color after:size-4 after:rounded-full"
+            >
+              <i class="fa-regular fa-bell fa-lg" aria-hidden="true"></i>
+            </button>
+            <a
+              href="profile.html"
+              aria-label="User Profile"
+              class="cursor-pointer duration-300 transition-transform hover:scale-125"
+            >
+              <img
+                src="./src/imgs/avatar.png"
+                alt="User Avatar"
+                class="size-12 rounded-full"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </header>
+        <main>
+          <!--start settings shape  -->
+          <section class="p-6 xsm:p-10 bg-body-bg">
+            <h1 class="main-head-section">Settings</h1>
+            <div
+              class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(450px,1fr))] gap-10 justify-center"
+            >
+              <!-- start site control -->
+              <div
+                class="aside-shadow rad-articles hover-animate p-8 sm:p-10 flex flex-col gap-8 site-control"
+              >
+                <div class="flex flex-col gap-8">
+                  <h2 class="font-bold text-5xl">Site Control</h2>
+                  <p class="text-white/50 font-bold">
+                    Control The Website If There Is Maintenance
+                  </p>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between gap-6">
+                  <div class="flex flex-col gap-4">
+                    <h3 class="font-bold text-3xl">Website Control</h3>
+                    <p class="text-white/50">
+                      Open/Close Website And Type The Reason
+                    </p>
+                  </div>
+                  <label for="toggle-switch" class="cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="toggle-switch"
+                      class="peer sr-only"
+                      role="switch"
+                      aria-label="Toggle Website Control"
+                    />
+                    <div class="toggle-switch" aria-hidden="true"></div>
+                  </label>
+                </div>
+                <form action="">
+                  <textarea
+                    name="close message"
+                    placeholder="Close message content"
+                    aria-placeholder="Close message content"
+                    class="placeholder:text-text-white/50 placeholder:font-bold p-6 h-80 w-full border-2 border-grey-color focus:outline-0 rounded-2xl"
+                  ></textarea>
+                </form>
+              </div>
+              <!-- end site control -->
+              <!-- start general info -->
+              <div
+                class="general-info aside-shadow rad-articles hover-animate p-8 sm:p-10 flex flex-col gap-8"
+              >
+                <div class="info flex flex-col gap-6">
+                  <h2 class="font-black text-5xl">General Info</h2>
+                  <p class="text-white/50 font-bold">
+                    General Information About Your Account
+                  </p>
+                </div>
+                <form action="">
+                  <fieldset
+                    aria-labelledby="General info"
+                    class="flex flex-col gap-6"
+                  >
+                    <div class="first-name input">
+                      <label for="first-name">First Name</label>
+                      <input
+                        type="text"
+                        name="First Name"
+                        id="first-name"
+                        placeholder="First name"
+                      />
+                    </div>
+                    <div class="last-name input">
+                      <label for="last-name">Last Name</label>
+                      <input
+                        type="text"
+                        name="Lirst Name"
+                        id="last-name"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                    <div class="email input md:flex-row md:items-center mt-4">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="o@nn.sa"
+                        readonly
+                        class="cursor-not-allowed bg-grey-color/40 flex-1 placeholder:font-bold placeholder:text-white"
+                      />
+                      <a
+                        href="#"
+                        class="font-bold duration-300 transition-colors p-4 rounded-3xl bg-blue-color/70 hover:bg-blue-color/50 cursor-pointer w-fit"
+                        >Change</a
+                      >
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+              <!-- end general info -->
+              <!--  start Security Info  -->
+              <div
+                class="security-info aside-shadow rad-articles hover-animate p-8 sm:p-10 flex flex-col gap-8"
+              >
+                <div class="heading flex flex-col gap-6">
+                  <h2 class="font-black text-5xl">Security Info</h2>
+                  <p class="text-white/50 font-bold">
+                    Security Information About Your Account
+                  </p>
+                </div>
+                <div class="infOs divide-y-1 divide-grey-color">
+                  <div class="info">
+                    <div class="text">
+                      <h3>Password</h3>
+                      <p>Last Change On 25/10/2021</p>
+                    </div>
+                    <a href="#" class="bg-blue-color/70 hover:bg-blue-color/40"
+                      >Change</a
+                    >
+                  </div>
+                  <div class="info">
+                    <div class="text">
+                      <h3>Two-Factor Authentication</h3>
+                      <p>Enable/Disable The Feature</p>
+                    </div>
+                    <label for="toggle-switch-2" class="cursor-pointer">
+                      <input
+                        type="checkbox"
+                        id="toggle-switch-2"
+                        class="peer sr-only"
+                        role="switch"
+                        aria-label="Toggle Website Control"
+                      />
+                      <div class="toggle-switch" aria-hidden="true"></div>
+                    </label>
+                  </div>
+                  <div class="info">
+                    <div class="text">
+                      <h3>Devices</h3>
+                      <p>Check The Login Devices List</p>
+                    </div>
+                    <a href="#" class="bg-grey-color/80 hover:bg-grey-color/50"
+                      >Devices</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- end Security Info  -->
+              <!-- start social media -->
+              <div
+                class="social-media aside-shadow rad-articles hover-animate p-8 sm:p-10 flex flex-col gap-8"
+              >
+                <div class="text flex flex-col gap-4">
+                  <h2 class="font-black text-5xl" id="social media">
+                    Social Info
+                  </h2>
+                  <p class="font-bold text-white/50">
+                    Social Media Information
+                  </p>
+                </div>
+                <form action="" class="flex-1">
+                  <fieldset
+                    class="flex flex-col gap-4 justify-between h-full"
+                    aria-labelledby="social media"
+                  >
+                    <div class="box-s">
+                      <input
+                        type="text"
+                        placeholder="Twitter Username"
+                        id="x"
+                        class="peer"
+                        name="x user"
+                      />
+                      <label for="x" aria-label="x" class="group">
+                        <i
+                          class="fa-brands fa-x-twitter fa-fw"
+                          aria-hidden="true"
+                        ></i
+                      ></label>
+                    </div>
+                    <div class="box-s">
+                      <input
+                        type="text"
+                        placeholder="Facebook Username"
+                        id="faceboock"
+                        class="peer"
+                        name="Facebook user"
+                      />
+                      <label for="faceboock" aria-label="faceboock">
+                        <i
+                          class="fa-brands fa-facebook-f fa-fw"
+                          aria-hidden="true"
+                        ></i
+                      ></label>
+                    </div>
+                    <div class="box-s">
+                      <input
+                        type="text"
+                        placeholder="Linkedin Username"
+                        id="linkedin"
+                        class="peer"
+                        name="Linkedin-user"
+                      />
+                      <label for="linkedin" aria-label="linkedin">
+                        <i
+                          class="fa-brands fa-linkedin fa-fw"
+                          aria-hidden="true"
+                        ></i
+                      ></label>
+                    </div>
+                    <div class="box-s">
+                      <input
+                        type="text"
+                        placeholder="Youtube Username"
+                        id="YouTube"
+                        class="peer"
+                        name="YouTube user"
+                      />
+                      <label for="YouTube" aria-label="Youtube">
+                        <i
+                          class="fa-brands fa-youtube fa-fw"
+                          aria-hidden="true"
+                        ></i
+                      ></label>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+              <!-- end social media -->
+              <!-- start Widgets Control -->
+              <div
+                class="widgets-control aside-shadow rad-articles hover-animate p-8 md:p-10 flex flex-col gap-12"
+              >
+                <div class="text flex flex-col gap-6">
+                  <h2 class="font-black text-5xl" id="Widgets-Control">
+                    Widgets Control
+                  </h2>
+                  <p class="text-white/50">Show/Hide Widgets</p>
+                </div>
+                <form action="" class="flex-1">
+                  <fieldset aria-labelledby="Widgets-Control" class="h-full">
+                    <ul class="flex flex-col gap-6 justify-between h-full">
+                      <li>
+                        <label for="quick-draft"
+                          >Quick Draft
+                          <input type="checkbox" id="quick-draft" checked
+                        /></label>
+                      </li>
+                      <li>
+                        <label for="yearly-targets"
+                          >Yearly Targets
+                          <input type="checkbox" id="yearly-targets" checked
+                        /></label>
+                      </li>
+                      <li>
+                        <label for="tickets-statistics"
+                          >Tickets Statistics
+                          <input
+                            type="checkbox"
+                            id="tickets-statistics"
+                            checked
+                        /></label>
+                      </li>
+                      <li>
+                        <label for="latest-news"
+                          >Latest News
+                          <input type="checkbox" id="latest-news" checked
+                        /></label>
+                      </li>
+                      <li>
+                        <label for="latest-tasks"
+                          >Latest Tasks
+                          <input type="checkbox" id="latest-tasks"
+                        /></label>
+                      </li>
+                      <li>
+                        <label for="top-search-items"
+                          >Top Search Items
+                          <input type="checkbox" id="top-search-items" checked
+                        /></label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
+              </div>
+              <!-- end Widgets Control -->
+              <!-- start Backup Manager -->
+              <div
+                class="backup-manager aside-shadow rad-articles hover-animate p-8 md:p-10 flex flex-col gap-12"
+              >
+                <div class="text flex flex-col gap-6">
+                  <h2 class="font-black text-5xl">Backup Manager</h2>
+                  <p class="text-white/50">Control Backup Time And Location</p>
+                </div>
+                <form action="">
+                  <fieldset>
+                    <ul
+                      class="flex flex-col gap-10 border-b-1 border-b-grey-color pb-15 time"
+                    >
+                      <li>
+                        <label for="daily"
+                          >Daily
+                          <input
+                            type="radio"
+                            id="daily"
+                            name="backup-time"
+                            class="sr-only"
+                            checked
+                        /></label>
+                      </li>
+                      <li>
+                        <label for="weekly"
+                          >Weekly
+                          <input
+                            type="radio"
+                            id="weekly"
+                            name="backup-time"
+                            class="sr-only"
+                        /></label>
+                      </li>
+                      <li>
+                        <label for="monthly"
+                          >Monthly
+                          <input
+                            type="radio"
+                            id="monthly"
+                            name="backup-time"
+                            class="sr-only"
+                        /></label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </form>
+                <ul
+                  class="servers-list flex flex-col sm:flex-row justify-between gap-6"
+                >
+                  <li>
+                    <label for="megaman" class="server-box">
+                      <input
+                        type="radio"
+                        name="server"
+                        id="megaman"
+                        checked
+                        class="sr-only"
+                      />
+                      <i class="fa-solid fa-server"></i>
+                      <span>Megaman</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="zero" class="server-box">
+                      <input
+                        type="radio"
+                        name="server"
+                        id="zero"
+                        class="sr-only"
+                      />
+                      <i class="fa-solid fa-server"></i>
+                      <span>Zero</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="sigma" class="server-box">
+                      <input
+                        type="radio"
+                        name="server"
+                        id="sigma"
+                        class="sr-only"
+                      />
+                      <i class="fa-solid fa-server"></i>
+                      <span>Sigma</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <!-- end Backup Manager -->
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

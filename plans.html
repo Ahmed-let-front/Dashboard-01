@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this first Dash for me" />
+    <meta name="author" content="Ahmed yasser" />
+    <title>Plans</title>
+  </head>
+  <body>
+    <div class="flex items-start">
+      <!-- start aside -->
+      <aside class="aside-shape">
+        <h3 class="main-head-sidebar text-[clamp(13px,2vw,18px)] my-[1rem_0]">
+          ahmed
+        </h3>
+        <ul class="flex flex-col gap-6 items-center md:items-start">
+          <li>
+            <a href="index.html" aria-label="Dashboard">
+              <i class="fa-regular fa-chart-bar fa-fw" aria-hidden="true"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" aria-label="Settings">
+              <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" aria-label="Profile">
+              <i class="fa-regular fa-user fa-fw 2" aria-hidden="true"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html" aria-label="Projects">
+              <i
+                class="fa-solid fa-diagram-project fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html" aria-label="Courses">
+              <i
+                class="fa-solid fa-graduation-cap fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html" aria-label="Friends">
+              <i class="fa-regular fa-circle-user fa-fw" aria-hidden="true"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html" aria-label="Files">
+              <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html" aria-label="Plans" aria-current="page">
+              <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- end aside -->
+      <div class="flex-1">
+        <!-- start header -->
+        <header
+          class="bg-box-bg h-30 flex justify-between items-center px-6 xsm:px-12 relative shadow-aside"
+        >
+          <form action="" role="search">
+            <div
+              class="relative before:absolute before:left-4 before:top-1/2 before:-translate-y-1/2 before:content-['\f002'] before:font-['Font_Awesome_6_Free'] before:text-grey-color"
+            >
+              <input
+                type="search"
+                name="search"
+                class="duration-300 rounded-2xl caret-black w-70 xsm:w-75 transition-[width] p-2 ps-14 bg-text-main focus:outline-0 focus:w-75 xsm:focus:w-85 placeholder:text-black/50 border-3 border-[#ccc] text-black placeholder:font-sans placeholder:font-[500]"
+                placeholder="Type A Keyword"
+                aria-placeholder="Type A Keyword"
+              />
+            </div>
+          </form>
+          <label for="user" class="md:hidden" aria-label="Toggle user menu">
+            <i class="fa-solid fa-bars cursor-pointer" aria-hidden="true"></i>
+          </label>
+          <input
+            type="checkbox"
+            id="user"
+            hidden
+            class="peer"
+            aria-label="Toggle user menu state"
+          />
+          <div
+            class="user-info flex gap-10 items-center opacity-0 scale-0 absolute pointer-events-none md:opacity-100 md:scale-100 md:pointer-events-auto md:static duration-300 md:flex peer-checked:block peer-checked:flex peer-checked:opacity-100 peer-checked:scale-100 peer-checked:pointer-events-auto bg-black top-full right-6 p-4 rounded-2xl before:absolute before:h-full before:w-[2px] before:bg-grey-color before:left-18 transition-all md:transition-none md:before:hidden md:bg-transparent z-2"
+            role="group"
+            aria-label="User controls"
+          >
+            <button
+              type="button"
+              aria-label="Unread notifications"
+              class="cursor-pointer relative after:absolute after:left-6 after:bottom-full after:bg-red-color after:size-4 after:rounded-full"
+            >
+              <i class="fa-regular fa-bell fa-lg" aria-hidden="true"></i>
+            </button>
+            <a
+              href="profile.html"
+              aria-label="User Profile"
+              class="cursor-pointer duration-300 transition-transform hover:scale-125"
+            >
+              <img
+                src="./src/imgs/avatar.png"
+                alt="User Avatar"
+                class="size-12 rounded-full"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </header>
+        <main>
+          <!--start plans shape  -->
+          <section class="p-6 xsm:p-10 bg-body-bg plans-page">
+            <h1 class="main-head-section">Plans</h1>
+            <div
+              class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-10 justify-center"
+            >
+              <div
+                class="plan-card rad-articles shadow-aside hover-animate free"
+              >
+                <div class="plan-header">
+                  <h2 class="plan-title">Free</h2>
+                  <span class="price"><span class="dollar">$</span>0.00</span>
+                </div>
+                <ul class="plan-features">
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Access All Text Lessons</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Access All Videos Lessons</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Appear On Leaderboard</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark no"></i
+                    ><span class="text">Browse Content Without Ads</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark no"></i
+                    ><span class="text">Access All Assignments</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark no"></i
+                    ><span class="text">Get Daily Prizes</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark no"></i
+                    ><span class="text">Earn Certificate</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark no"></i
+                    ><span class="text">1 GB Space For Hosting Files</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark no"></i
+                    ><span class="text">Access Badge System</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                </ul>
+                <button class="join-btn">Join</button>
+              </div>
+              <div
+                class="plan-card rad-articles shadow-aside hover-animate basic"
+              >
+                <div class="plan-header">
+                  <h2 class="plan-title">Basic</h2>
+                  <span class="price"><span class="dollar">$</span>7.99</span>
+                </div>
+                <ul class="plan-features">
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Access All Text Lessons</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Access All Videos Lessons</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Appear On Leaderboard</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Browse Content Without Ads</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Access All Assignments</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Get Daily Prizes</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Earn Certificate</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark no"></i
+                    ><span class="text">1 GB Space For Hosting Files</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark no"></i
+                    ><span class="text">Access Badge System</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                </ul>
+                <button class="join-btn">Join</button>
+              </div>
+              <div
+                class="plan-card rad-articles shadow-aside hover-animate premium"
+              >
+                <div class="plan-header">
+                  <h2 class="plan-title">Premium</h2>
+                  <span class="price"><span class="dollar">$</span>19.99</span>
+                </div>
+                <ul class="plan-features">
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Access All Text Lessons</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Access All Videos Lessons</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Appear On Leaderboard</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Browse Content Without Ads</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Access All Assignments</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Get Daily Prizes</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Earn Certificate</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">1 GB Space For Hosting Files</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check yes"></i
+                    ><span class="text">Access Badge System</span
+                    ><i class="fa-solid fa-circle-info help"></i>
+                  </li>
+                </ul>
+                <span class="current-plan">This Is Your Current Plan</span>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

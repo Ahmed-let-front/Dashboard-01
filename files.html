@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this first Dash for me" />
+    <meta name="author" content="Ahmed yasser" />
+    <title>Files</title>
+  </head>
+  <body>
+    <div class="flex items-start files-page">
+      <!-- start aside -->
+      <aside class="aside-shape">
+        <h3 class="main-head-sidebar text-[clamp(13px,2vw,18px)] my-[1rem_0]">
+          ahmed
+        </h3>
+        <ul class="flex flex-col gap-6 items-center md:items-start">
+          <li>
+            <a href="index.html" aria-label="Dashboard">
+              <i class="fa-regular fa-chart-bar fa-fw" aria-hidden="true"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" aria-label="Settings">
+              <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" aria-label="Profile">
+              <i class="fa-regular fa-user fa-fw 2" aria-hidden="true"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html" aria-label="Projects">
+              <i
+                class="fa-solid fa-diagram-project fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html" aria-label="Courses">
+              <i
+                class="fa-solid fa-graduation-cap fa-fw"
+                aria-hidden="true"
+              ></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html" aria-label="Friends">
+              <i class="fa-regular fa-circle-user fa-fw" aria-hidden="true"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html" aria-label="Files" aria-current="page">
+              <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html" aria-label="Plans">
+              <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- end aside -->
+      <div class="flex-1">
+        <!-- start header -->
+        <header
+          class="bg-box-bg h-30 flex justify-between items-center px-6 xsm:px-12 relative shadow-aside"
+        >
+          <form action="" role="search">
+            <div
+              class="relative before:absolute before:left-4 before:top-1/2 before:-translate-y-1/2 before:content-['\f002'] before:font-['Font_Awesome_6_Free'] before:text-grey-color"
+            >
+              <input
+                type="search"
+                name="search"
+                class="duration-300 rounded-2xl caret-black w-70 xsm:w-75 transition-[width] p-2 ps-14 bg-text-main focus:outline-0 focus:w-75 xsm:focus:w-85 placeholder:text-black/50 border-3 border-[#ccc] text-black placeholder:font-sans placeholder:font-[500]"
+                placeholder="Type A Keyword"
+                aria-placeholder="Type A Keyword"
+              />
+            </div>
+          </form>
+          <label for="user" class="md:hidden" aria-label="Toggle user menu">
+            <i class="fa-solid fa-bars cursor-pointer" aria-hidden="true"></i>
+          </label>
+          <input
+            type="checkbox"
+            id="user"
+            hidden
+            class="peer"
+            aria-label="Toggle user menu state"
+          />
+          <div
+            class="user-info flex gap-10 items-center opacity-0 scale-0 absolute pointer-events-none md:opacity-100 md:scale-100 md:pointer-events-auto md:static duration-300 md:flex peer-checked:block peer-checked:flex peer-checked:opacity-100 peer-checked:scale-100 peer-checked:pointer-events-auto bg-black top-full right-6 p-4 rounded-2xl before:absolute before:h-full before:w-[2px] before:bg-grey-color before:left-18 transition-all md:transition-none md:before:hidden md:bg-transparent z-2"
+            role="group"
+            aria-label="User controls"
+          >
+            <button
+              type="button"
+              aria-label="Unread notifications"
+              class="cursor-pointer relative after:absolute after:left-6 after:bottom-full after:bg-red-color after:size-4 after:rounded-full"
+            >
+              <i class="fa-regular fa-bell fa-lg" aria-hidden="true"></i>
+            </button>
+            <a
+              href="profile.html"
+              aria-label="User Profile"
+              class="cursor-pointer duration-300 transition-transform hover:scale-125"
+            >
+              <img
+                src="./src/imgs/avatar.png"
+                alt="User Avatar"
+                class="size-12 rounded-full"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </header>
+        <!-- end header -->
+        <main>
+          <!--start files shape  -->
+          <section class="p-4 xsm:p-10 bg-body-bg">
+            <h1 class="main-head-section">Files</h1>
+            <div class="flex flex-wrap-reverse gap-10">
+              <div
+                class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-10 flex-3"
+              >
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/pdf.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.pdf</h2>
+                    <span class="uploader">Ahmed</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">20/06/2020</span
+                    ><span class="size">5.5MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/avi.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.avi</h2>
+                    <span class="uploader">Admin</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">12.5MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/eps.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.eps</h2>
+                    <span class="uploader">Uploader</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">2.7MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/psd.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.psd</h2>
+                    <span class="uploader">Osama</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">15.1MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/dll.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.dll</h2>
+                    <span class="uploader">Coder</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">2.2MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/png.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.png</h2>
+                    <span class="uploader">Designer</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">1.1MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/dll.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.dll</h2>
+                    <span class="uploader">Coder</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">2.2MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/png.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.png</h2>
+                    <span class="uploader">Designer</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">1.1MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/psd.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.psd</h2>
+                    <span class="uploader">Osama</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">15.1MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/pdf.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.pdf</h2>
+                    <span class="uploader">Ahmed</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">5.5MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/avi.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.avi</h2>
+                    <span class="uploader">Admin</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">12.5MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/eps.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.eps</h2>
+                    <span class="uploader">Uploader</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">2.7MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/psd.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.psd</h2>
+                    <span class="uploader">Osama</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">15.1MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/dll.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.dll</h2>
+                    <span class="uploader">Coder</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">2.2MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/png.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.png</h2>
+                    <span class="uploader">Designer</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">1.1MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/dll.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.dll</h2>
+                    <span class="uploader">Coder</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">2.2MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/png.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.png</h2>
+                    <span class="uploader">Designer</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">1.1MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/psd.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.psd</h2>
+                    <span class="uploader">Osama</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">15.1MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/pdf.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.pdf</h2>
+                    <span class="uploader">Ahmed</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">5.5MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/avi.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.avi</h2>
+                    <span class="uploader">Admin</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">12.5MB</span>
+                  </footer>
+                </div>
+                <div
+                  class="file-card rad-articles shadow-aside hover-animate group"
+                >
+                  <i class="fa-solid fa-download download-icon"></i
+                  ><img
+                    src="./src/imgs/eps.svg"
+                    aria-hidden="true"
+                    alt=""
+                    class="file-img"
+                    loading="lazy"
+                  />
+                  <div class="file-meta">
+                    <h2 class="file-name">my-file.eps</h2>
+                    <span class="uploader">Uploader</span>
+                  </div>
+                  <footer class="file-footer">
+                    <span class="date">16/5/2021</span
+                    ><span class="size">2.7MB</span>
+                  </footer>
+                </div>
+              </div>
+              <div
+                class="rad-articles shadow-aside hover-animate p-8 self-end  min-w-[220px]لا flex-1 flex flex-col gap-12 files-statistics text-[13px] xl:sticky xl:top-15 "
+              >
+                <h2 class="font-black text-4xl">Files Statistics</h2>
+                <ul class="flex flex-col gap-4">
+                  <li class="box">
+                    <div class="content">
+                      <div class="icon bg-blue-color/20 text-blue-color">
+                        <i class="fa-regular fa-file-pdf fa-lg"></i>
+                      </div>
+                      <div class="text">
+                        <h3>PDF Files</h3>
+                        <span>130</span>
+                      </div>
+                    </div>
+                    <span class="gp">6.5GB</span>
+                  </li>
+                  <li class="box">
+                    <div class="content">
+                      <div class="icon bg-green-color/20 text-green-color">
+                        <i class="fa-regular fa-images fa-lg"></i>
+                      </div>
+                      <div class="text">
+                        <h3>Images</h3>
+                        <span>115 Files</span>
+                      </div>
+                    </div>
+                    <span class="gp">6.5GB</span>
+                  </li>
+                  <li class="box">
+                    <div class="content">
+                      <div class="icon bg-red-color/20 text-red-color">
+                        <i class="fa-regular fa-file-word fa-lg"></i>
+                      </div>
+                      <div class="text">
+                        <h3>Word Files</h3>
+                        <span>110 Files </span>
+                      </div>
+                    </div>
+                    <span class="gp">6.5GB</span>
+                  </li>
+                  <li class="box">
+                    <div class="content">
+                      <div class="icon bg-orange-color/20 text-orange-color">
+                        <i class="fa-solid fa-file-csv fa-lg"></i>
+                      </div>
+                      <div class="text">
+                        <h3>CSV Files</h3>
+                        <span>99 Files </span>
+                      </div>
+                    </div>
+                    <span class="gp">6.5GB</span>
+                  </li>
+                </ul>
+                <button
+                  class="p-6 cursor-pointer duration-300 hover:bg-blue-color/40 rounded-2xl bg-blue-color/70 self-center group font-bold"
+                >
+                  <i
+                    class="fa-solid fa-angles-up duration-300  transition-transform group-hover:-translate-y-2 me-2"
+                  ></i>
+                  Upload
+                </button>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
