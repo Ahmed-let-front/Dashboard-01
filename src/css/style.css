@@ -435,9 +435,9 @@
       after:font-['Font_Awesome_6_Free']
       after:grid
       after:place-items-center
-      after:text-[12px];
+      after:text-[12px]
+      after:content-['\f00c'];
       &:has(input:checked)::after {
-        content: "\f00c";
         transform: rotate(1turn);
         scale: 100%;
       }
