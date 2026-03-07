@@ -436,7 +436,7 @@
       after:grid
       after:place-items-center
       after:text-[12px]
-      after:content-['\\f00c'];
+      after:content-['✓'];
       &:has(input:checked)::after {
         transform: rotate(1turn);
         scale: 100%;
