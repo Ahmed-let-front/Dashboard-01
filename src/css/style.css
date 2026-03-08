@@ -416,8 +416,11 @@
   /* End Social Media Section */
   /* Start Widgets Control Section */
   .widgets-control {
+    ul {
+      @apply w-fit;
+    }
     label {
-      @apply relative flex items-center gap-6 font-bold cursor-pointer;
+      @apply relative flex items-center gap-6 font-bold cursor-pointer ;
       &::before {
         content: "";
         display: block;
