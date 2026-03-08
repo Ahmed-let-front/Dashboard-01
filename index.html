@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="flex items-start">
-      <!-- start aside -->
+      <!-- START: Sidebar Navigation -->
       <aside class="aside-shape">
         <h3 class="main-head-sidebar text-[clamp(13px,2vw,18px)] my-[1rem_0]">
           ahmed
@@ -48,6 +48,7 @@
                 <i class="fa-solid fa-bars"></i>
               </label>
               <input type="checkbox" id="bar-nav" hidden class="peer" />
+              <!-- START: Mobile Expanded Menu -->
               <ul
                 class="flex flex-col gap-6 absolute md:static bottom-full opacity-0 scale-0 pointer-events-none peer-checked:scale-100 peer-checked:opacity-100 peer-checked:pointer-events-auto duration-300 transition-transform transition-opacity bg-box-bg rounded-t-4xl p-4 md:opacity-100 md:scale-100 md:pointer-events-auto md:bg-transparent md:p-0 md:rounded-0 md:w-full"
               >
@@ -85,16 +86,19 @@
                   </a>
                 </li>
               </ul>
+              <!-- END: Mobile Expanded Menu -->
             </li>
           </ul>
         </nav>
       </aside>
-      <!-- end aside -->
+      <!-- END: Sidebar Navigation -->
+
       <div class="flex-1">
-        <!-- start header -->
+        <!-- START: Header Section -->
         <header
           class="bg-box-bg h-30 flex justify-between items-center px-6 xsm:px-12 relative shadow-aside"
         >
+          <!-- START: Search Bar -->
           <form action="" role="search">
             <div
               class="relative before:absolute before:left-4 before:top-1/2 before:-translate-y-1/2 before:content-['\f002'] before:font-['Font_Awesome_6_Free'] before:text-grey-color"
@@ -108,6 +112,9 @@
               />
             </div>
           </form>
+          <!-- END: Search Bar -->
+
+          <!-- START: User Controls -->
           <label for="user" class="md:hidden" aria-label="Toggle user menu">
             <i class="fa-solid fa-bars cursor-pointer" aria-hidden="true"></i>
           </label>
@@ -142,16 +149,18 @@
               />
             </a>
           </div>
+          <!-- END: User Controls -->
         </header>
-        <!-- end header -->
+        <!-- END: Header Section -->
+        <!-- START: Main Content -->
         <main>
-          <!--start dashnoard shape  -->
+          <!-- START: Dashboard Section -->
           <section class="p-4 xsm:p-10 bg-body-bg">
             <h1 class="main-head-section">Dashboard</h1>
             <div
               class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(450px,1fr))] gap-10 justify-center"
             >
-              <!-- start welcome box -->
+              <!-- START: Welcome Card -->
               <div
                 class="shadow-aside rad-articles flex flex-col gap-12 hover-animate"
               >
@@ -173,7 +182,6 @@
                     src="./src/imgs/avatar.png"
                     alt="user Avatar"
                     class="size-24 rounded-full absolute -bottom-8 border-4 border-grey-color"
-                    loading="lazy"
                   />
                 </header>
                 <div class="content p-8 flex flex-col gap-12">
@@ -200,8 +208,8 @@
                   </button>
                 </div>
               </div>
-              <!-- end welcome box -->
-              <!-- start Quick draft box -->
+              <!-- END: Welcome Card -->
+              <!-- START: Quick Draft Card -->
               <div
                 class="flex flex-col gap-8 bg-body-bg rad-articles p-6 hover-animate shadow-aside"
               >
@@ -233,8 +241,8 @@
                   </button>
                 </form>
               </div>
-              <!-- end Quick draft box -->
-              <!-- start yearly targets box -->
+              <!-- END: Quick Draft Card -->
+              <!-- START: Yearly Targets Card -->
               <div
                 class="rad-articles shadow-aside bg-body-bg px-8 py-12 flex flex-col gap-8 targets hover-animate"
               >
@@ -314,8 +322,8 @@
                   </li>
                 </ul>
               </div>
-              <!-- end yearly targets box -->
-              <!-- start tickets box -->
+              <!-- END: Yearly Targets Card -->
+              <!-- START: Tickets Statistics Card -->
               <div
                 class="shadow-aside rad-articles bg-body-bg hover-animate p-12 tickets flex flex-col gap-12"
               >
@@ -364,8 +372,8 @@
                   </li>
                 </ul>
               </div>
-              <!-- end tickets box -->
-              <!-- start news box -->
+              <!-- END: Tickets Statistics Card -->
+              <!-- START: Latest News Card -->
               <article class="shadow-aside hover-animate rad-articles">
                 <h2 class="font-black text-5xl my-[0_4rem] p-12 pb-0">
                   Latest News
@@ -429,8 +437,8 @@
                   </li>
                 </ul>
               </article>
-              <!-- end news box -->
-              <!-- start latest taks box -->
+              <!-- END: Latest News Card -->
+              <!-- START: Latest Tasks Card -->
               <div
                 class="latest-tasks hover-animate rad-articles shadow-aside pb-12"
               >
@@ -494,8 +502,8 @@
                   </li>
                 </ul>
               </div>
-              <!-- end latest taks box -->
-              <!-- start top search items box -->
+              <!-- END: Latest Tasks Card -->
+              <!-- START: Top Search Items Table -->
               <div
                 class="hover-animate rad-articles shadow-aside p-12 flex flex-col gap-8 top-search"
               >
@@ -535,8 +543,8 @@
                   </tbody>
                 </table>
               </div>
-              <!-- end top search items box -->
-              <!-- start latest uploads -->
+              <!-- END: Top Search Items Table -->
+              <!-- START: Latest Uploads Card -->
               <div
                 class="latest-Uploads rad-articles shadow-aside hover-animate pb-8"
               >
@@ -616,8 +624,8 @@
                   </li>
                 </ul>
               </div>
-              <!-- end latest uploads -->
-              <!-- start Last Project Progress -->
+              <!-- END: Latest Uploads Card -->
+              <!-- START: Last Project Progress Card -->
               <div
                 class="rad-articles shadow-aside hover-animate p-14 flex flex-col gap-14 last-projects relative z-2"
               >
@@ -637,10 +645,11 @@
                   src="./src/imgs/project.png"
                   aria-hidden="true"
                   class="absolute bottom-0 h-60 opacity-70 right-20 -z-1 hidden md:block"
+                  loading="lazy"
                 />
               </div>
-              <!-- end Last Project Progress -->
-              <!-- start Reminders -->
+              <!-- END: Last Project Progress Card -->
+              <!-- START: Reminders Card -->
               <div
                 class="rad-articles shadow-aside p-12 hover-animate Reminders flex flex-col gap-12 md:ps-20"
               >
@@ -664,8 +673,8 @@
                   </li>
                 </ul>
               </div>
-              <!-- end Reminders -->
-              <!-- start Latest Post -->
+              <!-- END: Reminders Card -->
+              <!-- START: Latest Post Card -->
               <article
                 class="rad-articles shadow-aside p-12 hover-animate flex flex-col gap-12"
               >
@@ -704,8 +713,8 @@
                   </div>
                 </footer>
               </article>
-              <!-- end Latest Post -->
-              <!-- start Social Media Stats -->
+              <!-- END: Latest Post Card -->
+              <!-- START: Social Media Stats Card -->
               <div
                 class="rad-articles shadow-aside p-8 md:p-12 hover-animate flex flex-col gap-12 social-media-stats"
               >
@@ -765,8 +774,8 @@
                   </li>
                 </ul>
               </div>
-              <!-- end Social Media Stats -->
-              <!-- start projects -->
+              <!-- END: Social Media Stats Card -->
+              <!-- START: Projects Table -->
               <div
                 class="col-span-full shadow-aside p-8 md:p-12 flex flex-col gap-16 rad-articles projects-article"
               >
@@ -935,10 +944,12 @@
                   </table>
                 </div>
               </div>
-              <!-- end projects -->
+              <!-- END: Projects Table -->
             </div>
           </section>
+          <!-- END: Dashboard Section -->
         </main>
+        <!-- END: Main Content -->
       </div>
     </div>
     <script type="module" src="/src/main.js"></script>

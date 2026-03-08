@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="flex items-start Projects-page">
-      <!-- start aside -->
+      <!-- START Sidebar Navigation -->
       <aside class="aside-shape">
         <h3 class="main-head-sidebar text-[clamp(13px,2vw,18px)] my-[1rem_0]">
           ahmed
@@ -48,6 +48,7 @@
                 <i class="fa-solid fa-bars"></i>
               </label>
               <input type="checkbox" id="bar-nav" hidden class="peer" />
+              <!-- START Mobile Expanded Menu -->
               <ul
                 class="flex flex-col gap-6 absolute md:static bottom-full opacity-0 scale-0 pointer-events-none peer-checked:scale-100 peer-checked:opacity-100 peer-checked:pointer-events-auto duration-300 transition-transform transition-opacity bg-box-bg rounded-t-4xl p-4 md:opacity-100 md:scale-100 md:pointer-events-auto md:bg-transparent md:p-0 md:rounded-0 md:w-full"
               >
@@ -85,16 +86,18 @@
                   </a>
                 </li>
               </ul>
+              <!-- END Mobile Expanded Menu -->
             </li>
           </ul>
         </nav>
       </aside>
-      <!-- end aside -->
+      <!-- END Sidebar Navigation -->
       <div class="flex-1">
-        <!-- start header -->
+        <!-- START Header Section -->
         <header
           class="bg-box-bg h-30 flex justify-between items-center px-6 xsm:px-12 relative shadow-aside"
         >
+          <!-- START Search Bar -->
           <form action="" role="search">
             <div
               class="relative before:absolute before:left-4 before:top-1/2 before:-translate-y-1/2 before:content-['\f002'] before:font-['Font_Awesome_6_Free'] before:text-grey-color"
@@ -108,6 +111,8 @@
               />
             </div>
           </form>
+          <!-- END Search Bar -->
+          <!-- START User Controls -->
           <label for="user" class="md:hidden" aria-label="Toggle user menu">
             <i class="fa-solid fa-bars cursor-pointer" aria-hidden="true"></i>
           </label>
@@ -143,9 +148,11 @@
               />
             </a>
           </div>
+          <!-- END User Controls -->
         </header>
+        <!-- END Header Section -->
         <main>
-          <!--start projects shape  -->
+          <!-- START Projects Section -->
           <section class="p-6 xsm:p-10 bg-body-bg">
             <h1 class="main-head-section">Projects</h1>
             <div
@@ -408,6 +415,7 @@
               </div>
             </div>
           </section>
+          <!-- END Projects Section -->
         </main>
       </div>
     </div>
