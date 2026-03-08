@@ -60,6 +60,217 @@ During the development of this architecture, I encountered several complex UI/UX
 - **The Bug:** Users experienced a UX issue where the `<li>` wrapper would visually highlight on hover, but clicking its padded edges did nothing. Only the precise text of the inner `<a>` tag was clickable.
 - **The Engineering Solution (Block Link Pattern):** I aggressively stripped all physical dimensions (`padding`, `width`, `height`, and `hover` states) from the parent `<li>` wrapper. I injected these properties directly into the anchor tag itself (`<a class="w-full h-full p-4 ...">`). This mathematical shift forced the inline `<a>` to behave as a block-level element, ensuring that **every physical pixel** of the visual button is a valid, instantly clickable hit-area.
 
+### 🧱 Challenge 6: The Phantom Sidebar Shift (DOM Node Omission)
+
+- **The Bug:** During the sidebar construction, I noticed a severe layout shift. The "Courses" navigation link had visually jumped into the wrong position. I traced this bug to a missing DOM node (the 5th `<li>` was inadvertently omitted). Because every `<li>` was rigidly constrained with hardcoded dimensions (`h-14` and `p-4`), the subsequent "Courses" item aggressively shifted up to consume the vacated slot, breaking the intended visual hierarchy.
+- **The Engineering Solution:** I diagnosed this as a brittle layout caused by rigid physical constraints rather than fluid content distribution. To fix this, I re-architected the sidebar's spacing strategy. By relying on CSS Flexbox `gap` properties on the parent `<ul>` and allowing the `<li>` elements to be naturally sized by their inner anchor tags (the "Block Link" pattern), the layout became entirely data-driven. Now, even if a DOM node is dynamically removed or missing, the spatial distribution remains mathematically consistent.
+
+---
+
+## 📂 PAGE-BY-PAGE TECHNICAL BREAKDOWN
+
+### 1. 📊 Dashboard (The Hub)
+
+- **Engineering Feature:** Engineered a native scroll-progress indicator strictly using CSS (`animation-timeline: scroll()`) attached to a `::before` pseudo-element on the body, entirely bypassing heavy JavaScript scroll event listeners.
+
+### 2. ⚙️ Settings
+
+- **Engineering Feature:** **Zero-JS State Management.** Built highly interactive toggle switches and custom widgets pushing state mutations entirely to the CSS engine.
+
+### 3. 👤 Profile
+
+- **Engineering Feature:** Engineered a scalable activity timeline using structural pseudo-elements (`::before` / `::after`) and precise absolute positioning coordinates.
+
+### 4. 💼 Projects
+
+- **Engineering Feature:** Handled complex data tables with horizontal overflows while implementing overlapping team avatars via negative inline-margins (`-ms-8`) and precise `z-index` layering.
+
+### 5. 🎓 Courses
+
+- **Engineering Feature:** Semantic Isolation. Each entity is encapsulated in an `<article>`. Strategically utilized absolute positioning to break instructor avatars out of the standard document flow.
+
+### 6. 👥 Friends
+
+- **Engineering Feature:** Flexbox Spatial Distribution. Leveraged `flex-col` and `justify-between` to create component-based cards that dynamically stretch to maintain perfectly equal heights.
+
+### 7. 📁 Files
+
+- **Engineering Feature:** Mastered Flex algorithm constraints. Solved the notorious layout battle by strictly defining the expanding content grid with `flex-1` (Fluid) while locking the statistics sidebar with `shrink-0` (Rigid).
+
+### 8. 💳 Plans
+
+- **Engineering Feature:** **Dynamic Theming.** The UI relies on advanced CSS nesting (`&.free`, `&.basic`) to dynamically inject color palettes that pass WCAG Accessibility contrast metrics.
+
+---
+
+## 🖼️ UI ARCHITECTURE GALLERY
+
+<details>
+  <summary><b>🖱️ Click to expand and view full-page interfaces</b></summary>
+  <br>
+
+### 1. Dashboard Interface
+
+![Dashboard Full View](./public/dashboard-full.png)
+
+### 2. Settings Interface
+
+![Settings Full View](./public/settings-full.png)
+
+### 3. Profile Interface
+
+![Profile Full View](./public/profile-full.png)
+
+### 4. Projects Interface
+
+![Projects Full View](./public/projects-full.png)
+
+### 5. Courses Interface
+
+![Courses Full View](./public/courses-full.png)
+
+### 6. Friends Interface
+
+![Friends Full View](./public/friends-full.png)
+
+### 7. Files Interface
+
+![Files Full View](./public/files-full.png)
+
+### 8. Plans Interface
+
+![Plans Full View](./public/plans-full.png)
+
+</details>
+
+---
+
+## 🔍 LIGHTHOUSE AUDIT & PERFORMANCE (THE 400 CLUB & ZERO CLS)
+
+Achieving a perfect **100/100 across all four metrics** (Performance, Accessibility, Best Practices, SEO) is the ultimate proof of clean architecture. It reflects relentless effort, microscopic DOM optimization, and strict semantic enforcement.
+
+**The Zero Cumulative Layout Shift Achievement:** By meticulously defining dimension constraints for every asset and strictly adhering to the GPU-accelerated animation model, I engineered a rock-solid DOM layout that achieves a perfect **0 Cumulative Layout Shift (CLS)** across almost the entire application. This guarantees zero visual content jumping during rendering.
+
+Here is the stacked evidence of flawless performance across all eight pages:
+
+### 📊 Dashboard Page
+
+- **Scores:** Performance: 100 \| Accessibility: 100 \| Best Practices: 100 \| SEO: 100
+- **Core Web Vitals:** First Contentful Paint: 0.5s \| Largest Contentful Paint: 0.5s \| **CLS: 0**
+
+<div align="center">
+
+![Dashboard Audit Scores](./public/dashboard.png)
+
+![Dashboard Audit Vitals](./public/dashboard2.png)
+
+</div>
+
+---
+
+### ⚙️ Settings Page
+
+- **Scores:** Performance: 100 \| Accessibility: 100 \| Best Practices: 100 \| SEO: 100
+- **Core Web Vitals:** First Contentful Paint: 0.6s \| Largest Contentful Paint: 0.6s \| CLS: 0.001
+
+<div align="center">
+
+![Settings Audit Scores](./public/settings.png)
+
+![Settings Audit Vitals](./public/settings2.png)
+
+</div>
+
+---
+
+### 👤 Profile Page
+
+- **Scores:** Performance: 100 \| Accessibility: 100 \| Best Practices: 100 \| SEO: 100
+- **Core Web Vitals:** First Contentful Paint: 0.5s \| Largest Contentful Paint: 0.7s \| CLS: 0.001
+
+<div align="center">
+
+![Profile Audit Scores](./public/profile.png)
+
+![Profile Audit Vitals](./public/profile2.png)
+
+</div>
+
+---
+
+### 💼 Projects Page
+
+- **Scores:** Performance: 100 \| Accessibility: 100 \| Best Practices: 100 \| SEO: 100
+- **Core Web Vitals:** First Contentful Paint: 0.4s \| Largest Contentful Paint: 0.4s \| CLS: 0.001
+
+<div align="center">
+
+![Projects Audit Scores](./public/projects.png)
+
+![Projects Audit Vitals](./public/projects2.png)
+
+</div>
+
+---
+
+### 🎓 Courses Page
+
+- **Scores:** Performance: 100 \| Accessibility: 100 \| Best Practices: 100 \| SEO: 100
+- **Core Web Vitals:** First Contentful Paint: 0.5s \| Largest Contentful Paint: 0.5s \| CLS: 0.001
+
+<div align="center">
+
+![Courses Audit Scores](./public/courses.png)
+
+![Courses Audit Vitals](./public/courses2.png)
+
+</div>
+
+---
+
+### 👥 Friends Page
+
+- **Scores:** Performance: 100 \| Accessibility: 100 \| Best Practices: 100 \| SEO: 100
+- **Core Web Vitals:** First Contentful Paint: 0.6s \| Largest Contentful Paint: 0.7s \| **CLS: 0**
+
+<div align="center">
+
+![Friends Audit Scores](./public/friends.png)
+
+![Friends Audit Vitals](./public/friends2.png)
+
+</div>
+
+---
+
+### 📁 Files Page
+
+- **Scores:** Performance: 100 \| Accessibility: 100 \| Best Practices: 100 \| SEO: 100
+- **Core Web Vitals:** First Contentful Paint: 0.4s \| Largest Contentful Paint: 0.4s \| CLS: 0.006
+
+<div align="center">
+
+![Files Audit Scores](./public/files.png)
+
+![Files Audit Vitals](./public/files2.png)
+
+</div>
+
+---
+
+### 💳 Plans Page
+
+- **Scores:** Performance: 100 \| Accessibility: 100 \| Best Practices: 100 \| SEO: 100
+- **Core Web Vitals:** First Contentful Paint: 0.4s \| Largest Contentful Paint: 0.4s \| **CLS: 0**
+
+<div align="center">
+
+![Plans Audit Scores](./public/plans.png)
+
+![Plans Audit Vitals](./public/plans2.png)
+
+</div>
+
 ---
 
 ## 👨‍💻 THE CRAFTSMAN: AHMED YASSER
