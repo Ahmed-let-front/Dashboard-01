@@ -349,7 +349,7 @@
   /* Start Settings Page */
   /* Start Toggle Switch Component */
   .toggle-switch {
-    @apply bg-grey-color w-35 h-13 rounded-4xl cursor-pointer relative before:absolute before:size-10 before:rounded-full before:top-1/2 before:-translate-y-1/2 before:left-2 before:bg-white before:text-grey-color before:transition-all before:duration-300 flex items-center justify-center peer-checked:bg-blue-color peer-checked:before:translate-x-[56px] peer-checked:before:text-blue-color;
+    @apply bg-grey-color w-35 h-13 rounded-4xl cursor-pointer relative before:absolute before:size-10 before:rounded-full before:top-1/2 before:-translate-y-1/2 before:left-2 before:bg-white before:text-grey-color before:transition-all before:duration-300 flex items-center justify-center peer-checked:bg-blue-color peer-checked:before:translate-x-[52px] peer-checked:before:text-blue-color;
   }
   .toggle-switch::before {
     content: "\f00d" !important;
@@ -417,38 +417,37 @@
   /* Start Widgets Control Section */
   .widgets-control {
     label {
-      @apply relative flex items-center gap-6 font-bold cursor-pointer
-    before:block 
-    before:left-0 
-    before:top-0 
-    before:size-8 
-    before:rounded-[5px] 
-    before:border-2 
-    before:border-grey-color
-    before:cursor-pointer
-    before:duration-300
-    before:transition-colors
-    hover:before:border-blue-color
-    after:absolute
-    after:bg-blue-color
-    after:rounded-[2px]
-    after:size-[calc(2rem_-_4px)]
-    after:scale-0
-    after:duration-300
-    after:will-change-transform
-    after:left-[2px]
-    after:top-[2px]
-    after:grid
-    after:place-items-center
-    after:text-[12px];
+      @apply relative flex items-center gap-6 font-bold cursor-pointer;
+      &::before {
+        content: "";
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 5px;
+        border: 2px solid var(--color-grey-color);
+        transition: all 0.3s;
+      }
+      &:hover::before {
+        border-color: var(--color-blue-color);
+      }
       &::after {
-        content: "\f00c";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        width: calc(2rem - 4px);
+        height: calc(2rem - 4px);
+        background-color: var(--color-blue-color);
+        border-radius: 2px;
+        transform: scale(0) rotate(0);
+        transition: all 0.3s;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
       }
       &:has(input:checked)::after {
-        transform: rotate(1turn);
-        scale: 100%;
+        transform: scale(1) rotate(1turn);
       }
       &:has(input:checked)::before {
         border-color: var(--color-blue-color);
@@ -533,7 +532,7 @@
         .right {
           @apply flex flex-col gap-6 items-center xl:items-start;
           .toggle-switch {
-            @apply h-12 before:size-8 before:text-[10px];
+            @apply h-12 before:size-8 before:text-[10px] peer-checked:before:translate-x-[56px];
           }
         }
         .info-row {
