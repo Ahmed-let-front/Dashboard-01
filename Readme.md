@@ -11,7 +11,7 @@
 [**🌐 Explore Live Demo**](https://ahmed-let-front.github.io/Dashboard-01/)
 
 ---
-
+![her-png](./public/hero.png)
 ### 🛠️ CORE TECH STACK
 
 |                                                                                                           |                                                                                                        |                                                                                                                              |                                                                                                                          |
@@ -118,11 +118,11 @@ Here is the stacked evidence of flawless performance across all eight pages:
 
 <div align="center">
 
-![Dashboard Audit Scores](./public/Dashboard.png)
+![Dashboard Audit Scores](./public/header.png)
 
 ---
 
-![Dashboard Audit Vitals](./public/Dashboard2.png)
+![Dashboard Audit Vitals](./public/header2.png)
 
 </div>
 
@@ -139,7 +139,7 @@ Here is the stacked evidence of flawless performance across all eight pages:
 
 ---
 
-![Settings Audit Vitals](./public/settings2.png)
+
 
 </div>
 
