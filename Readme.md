@@ -4,6 +4,8 @@
 
 ### 🏆 Precision-Engineered for Extreme Scalability, Fluidity, and Semantic Flawlessness
 
+![Elite Dashboard Overview](./public/hero.png)
+
 [![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#) ![Maintained](https://img.shields.io/badge/Maintained-Yes-blue?style=for-the-badge)
 
 ---
@@ -103,48 +105,6 @@ During the development of this architecture, I encountered several complex UI/UX
 
 ---
 
-## 🖼️ UI ARCHITECTURE GALLERY
-
-<details>
-  <summary><b>🖱️ Click to expand and view full-page interfaces</b></summary>
-  <br>
-
-### 1. Dashboard Interface
-
-![Dashboard Full View](./public/dashboard-full.png)
-
-### 2. Settings Interface
-
-![Settings Full View](./public/settings-full.png)
-
-### 3. Profile Interface
-
-![Profile Full View](./public/profile-full.png)
-
-### 4. Projects Interface
-
-![Projects Full View](./public/projects-full.png)
-
-### 5. Courses Interface
-
-![Courses Full View](./public/courses-full.png)
-
-### 6. Friends Interface
-
-![Friends Full View](./public/friends-full.png)
-
-### 7. Files Interface
-
-![Files Full View](./public/files-full.png)
-
-### 8. Plans Interface
-
-![Plans Full View](./public/plans-full.png)
-
-</details>
-
----
-
 ## 🔍 LIGHTHOUSE AUDIT & PERFORMANCE (THE 400 CLUB & ZERO CLS)
 
 Achieving a perfect **100/100 across all four metrics** (Performance, Accessibility, Best Practices, SEO) is the ultimate proof of clean architecture. It reflects relentless effort, microscopic DOM optimization, and strict semantic enforcement.
@@ -160,9 +120,9 @@ Here is the stacked evidence of flawless performance across all eight pages:
 
 <div align="center">
 
-![Dashboard Audit Scores](./public/dashboard.png)
+![Dashboard Audit Scores](./public/Dashboard.png)
 
-![Dashboard Audit Vitals](./public/dashboard2.png)
+![Dashboard Audit Vitals](./public/Dashboard2.png)
 
 </div>
 
