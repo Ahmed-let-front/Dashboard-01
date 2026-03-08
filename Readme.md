@@ -11,7 +11,7 @@
 [**🌐 Explore Live Demo**](https://ahmed-let-front.github.io/Dashboard-01/)
 
 ---
-
+![hero-photo](./public/hero.png)
 ### 🛠️ CORE TECH STACK
 
 |                                                                                                           |                                                                                                        |                                                                                                                              |                                                                                                                          |
