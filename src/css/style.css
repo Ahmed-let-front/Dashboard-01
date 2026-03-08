@@ -19,14 +19,6 @@
   src: url("@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2")
     format("woff2");
 }
-@font-face {
-  font-family: "Font Awesome 6 Regular";
-  src: url("@fortawesome/fontawesome-free/webfonts/fa-regular-900.woff2")
-    format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
 /* End Fonts Setup */
 /* Start Theme Variables */
 @theme {
@@ -428,7 +420,7 @@
       @apply w-fit;
     }
     label {
-      @apply relative flex items-center gap-6 font-bold cursor-pointer;
+      @apply relative flex items-center gap-6 font-bold cursor-pointer ;
       &::before {
         content: "";
         display: block;
