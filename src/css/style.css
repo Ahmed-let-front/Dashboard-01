@@ -418,32 +418,34 @@
   .widgets-control {
     label {
       @apply relative flex items-center gap-6 font-bold cursor-pointer
-      before:block 
-      before:left-0 
-      before:top-0 
-      before:size-8 
-      before:rounded-[5px] 
-      before:border-2 
-      before:border-grey-color
-      before:cursor-pointer
-      before:duration-300
-      before:transition-colors
-      hover:before:border-blue-color
-      after:absolute
-      after:bg-blue-color
-      after:rounded-[2px]
-      after:size-[calc(2rem_-_4px)]
-      after:scale-0
-      after:duration-300
-      after:will-change-transform
-      after:left-[2px]
-      after:top-[2px]
-      after:font-black
-      after:font-['Font_Awesome_6_Free']
-      after:grid
-      after:place-items-center
-      after:text-[12px]
-      after:content-['✓'];
+    before:block 
+    before:left-0 
+    before:top-0 
+    before:size-8 
+    before:rounded-[5px] 
+    before:border-2 
+    before:border-grey-color
+    before:cursor-pointer
+    before:duration-300
+    before:transition-colors
+    hover:before:border-blue-color
+    after:absolute
+    after:bg-blue-color
+    after:rounded-[2px]
+    after:size-[calc(2rem_-_4px)]
+    after:scale-0
+    after:duration-300
+    after:will-change-transform
+    after:left-[2px]
+    after:top-[2px]
+    after:grid
+    after:place-items-center
+    after:text-[12px];
+      &::after {
+        content: "\f00c";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+      }
       &:has(input:checked)::after {
         transform: rotate(1turn);
         scale: 100%;
