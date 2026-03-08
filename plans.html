@@ -6,8 +6,8 @@
     <meta name="description" content="this first Dash for me" />
     <meta name="author" content="Ahmed yasser" />
     <title>Plans</title>
-    <script type="module" crossorigin src="/Dashboard-01/assets/main-CytApzqx.js"></script>
-    <link rel="stylesheet" crossorigin href="/Dashboard-01/assets/main-Dbsgq1z3.css">
+    <script type="module" crossorigin src="/Dashboard-01/assets/main-BdHARbb7.js"></script>
+    <link rel="stylesheet" crossorigin href="/Dashboard-01/assets/main-BE3v5pR8.css">
     <link rel="stylesheet" crossorigin href="/Dashboard-01/assets/vendor-Dee_Dc0_.css">
   </head>
   <body>
@@ -17,62 +17,80 @@
         <h3 class="main-head-sidebar text-[clamp(13px,2vw,18px)] my-[1rem_0]">
           ahmed
         </h3>
-        <ul class="flex flex-col gap-6 items-center md:items-start">
-          <li>
-            <a href="index.html" aria-label="Dashboard">
-              <i class="fa-regular fa-chart-bar fa-fw" aria-hidden="true"></i>
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a href="settings.html" aria-label="Settings">
-              <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
-              <span>Settings</span>
-            </a>
-          </li>
-          <li>
-            <a href="profile.html" aria-label="Profile">
-              <i class="fa-regular fa-user fa-fw 2" aria-hidden="true"></i>
-              <span>Profile</span>
-            </a>
-          </li>
-          <li>
-            <a href="projects.html" aria-label="Projects">
-              <i
-                class="fa-solid fa-diagram-project fa-fw"
-                aria-hidden="true"
-              ></i>
-              <span>Projects</span>
-            </a>
-          </li>
-          <li>
-            <a href="courses.html" aria-label="Courses">
-              <i
-                class="fa-solid fa-graduation-cap fa-fw"
-                aria-hidden="true"
-              ></i>
-              <span>Courses</span>
-            </a>
-          </li>
-          <li>
-            <a href="friends.html" aria-label="Friends">
-              <i class="fa-regular fa-circle-user fa-fw" aria-hidden="true"></i>
-              <span>Friends</span>
-            </a>
-          </li>
-          <li>
-            <a href="files.html" aria-label="Files">
-              <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
-              <span>Files</span>
-            </a>
-          </li>
-          <li>
-            <a href="plans.html" aria-label="Plans" aria-current="page">
-              <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
-              <span>Plans</span>
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="flex md:flex-col gap-6 justify-center w-full">
+            <li>
+              <a href="index.html" aria-label="Dashboard">
+                <i class="fa-regular fa-chart-bar fa-fw" aria-hidden="true"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="settings.html" aria-label="Settings">
+                <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="profile.html" aria-label="Profile">
+                <i class="fa-regular fa-user fa-fw 2" aria-hidden="true"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="projects.html" aria-label="Projects">
+                <i
+                  class="fa-solid fa-diagram-project fa-fw"
+                  aria-hidden="true"
+                ></i>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <label for="bar-nav" class="p-4 md:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+              <input type="checkbox" id="bar-nav" hidden class="peer" />
+              <ul
+                class="flex flex-col gap-6 absolute md:static bottom-full opacity-0 scale-0 pointer-events-none peer-checked:scale-100 peer-checked:opacity-100 peer-checked:pointer-events-auto duration-300 transition-transform transition-opacity bg-box-bg rounded-tr-2xl rounded-tl-2xl p-4 md:opacity-100 md:scale-100 md:pointer-events-auto md:bg-transparent md:p-0 md:rounded-0 md:w-full"
+              >
+                <li>
+                  <a href="courses.html" aria-label="Courses">
+                    <i
+                      class="fa-solid fa-graduation-cap fa-fw"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Courses</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="friends.html" aria-label="Friends">
+                    <i
+                      class="fa-regular fa-circle-user fa-fw"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Friends</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="files.html" aria-label="Files">
+                    <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+                    <span>Files</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="plans.html" aria-label="Plans" aria-current="page">
+                    <i
+                      class="fa-regular fa-credit-card fa-fw"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Plans</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </aside>
       <!-- end aside -->
       <div class="flex-1">
@@ -134,7 +152,7 @@
           <section class="p-6 xsm:p-10 bg-body-bg plans-page">
             <h1 class="main-head-section">Plans</h1>
             <div
-              class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] sm:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-10 justify-center"
+              class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-10"
             >
               <div
                 class="plan-card rad-articles shadow-aside hover-animate free"
