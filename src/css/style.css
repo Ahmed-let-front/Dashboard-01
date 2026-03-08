@@ -45,7 +45,7 @@
   /* Start Body Setup */
   body {
     font-family: "Open Sans Variable", sans-serif;
-    @apply text-2xl bg-body-bg text-text-main before:fixed before:top-0 before:left-0 before:w-0 before:h-2 before:z-4 before:bg-[#ddd] before:rounded-tr-2xl before:rounded-br-2xl before:animate-[fill-bar_linear] before:[animation-timeline:scroll()];
+    @apply text-2xl bg-body-bg text-text-main before:fixed before:top-0 before:left-0 before:w-0 before:h-2 before:z-4 before:bg-[#ddd] before:rounded-tr-2xl before:rounded-br-2xl before:animate-[fill-bar_linear] before:[animation-timeline:scroll()] pb-30 md:pb-0;
   }
   /* End Body Setup */
   /* Start Scrollbar Customization */
@@ -65,8 +65,9 @@
   }
   /* End Scrollbar Customization */
   /* Start Active Sidebar Item */
-  .aside-shape li:has(a[aria-current="page"]) {
-    background-color: var(--color-hover-bg);
+  .aside-shape li:has(> a[aria-current="page"]) {
+    color: black;
+    background-color: var(--color-text-main);
   }
   /* End Active Sidebar Item */
   /* Start Global HTML Rules */
@@ -80,23 +81,29 @@
 @layer components {
   /* Start Sidebar Component */
   .aside-shape {
-    @apply shadow-aside bg-box-bg sticky top-0 left-0 z-2 flex flex-col gap-8 md:gap-25 min-h-lvh w-fit p-4 md:p-6 md:w-80;
+    @apply shadow-aside bg-box-bg rounded-t-[27px] xsm:rounded-t-[50px] fixed bottom-0   md:sticky md:top-0 md:left-0 z-3 flex md:flex-col gap-8 md:gap-25 md:min-h-lvh w-full p-4 md:p-6 md:w-80 md:rounded-none;
+    nav {
+      @apply w-full;
+    }
     ul {
       span {
         @apply hidden md:block font-[500];
       }
       li {
-        @apply w-fit md:w-full h-16 cursor-pointer p-4 rounded-2xl duration-300 transition-colors hover:bg-hover-bg;
+        @apply cursor-pointer  rounded-2xl overflow-hidden grid place-items-center md:place-items-start;
+        [for="bar-nav"] {
+          @apply duration-300 transition-colors hover:text-black hover:bg-text-main;
+        }
       }
       a {
-        @apply flex gap-4 items-center;
+        @apply flex gap-4 items-center p-4 duration-300 transition-colors  hover:bg-text-main hover:text-black w-fit md:w-full h-16;
       }
     }
   }
   /* End Sidebar Component */
   /* Start Typography Components */
   .main-head-sidebar {
-    @apply capitalize font-bold text-[clamp(13px,5vw,18px)] relative text-center after:absolute after:w-32 after:h-[3px] after:bg-text-main after:top-[calc(100%_+_20px)] after:left-1/2 after:-translate-1/2 before:absolute before:left-1/2 before:-translate-x-1/2 before:top-[calc(100%_+_10px)] before:size-8 before:bg-text-main before:border-4 before:border-box-bg before:rounded-full before:z-2 before:hidden md:before:block after:hidden md:after:block;
+    @apply capitalize font-bold text-[clamp(13px,5vw,18px)] relative text-center after:absolute after:w-32 after:h-[3px] after:bg-text-main after:top-[calc(100%_+_20px)] after:left-1/2 after:-translate-1/2 before:absolute before:left-1/2 before:-translate-x-1/2 before:top-[calc(100%_+_10px)] before:size-8 before:bg-text-main before:border-4 before:border-box-bg before:rounded-full before:z-2 before:hidden md:before:block after:hidden md:after:block hidden md:block;
   }
   .main-head-section {
     @apply font-[700] my-[0_6rem] text-5xl relative w-fit before:absolute before:top-[calc(100%_+_20px)] before:w-40 before:h-[3px] before:bg-text-main  after:absolute after:top-[calc(100%_+_20px)] after:w-[30px] after:h-[3px] after:bg-black after:left-0;

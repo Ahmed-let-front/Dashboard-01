@@ -14,62 +14,80 @@
         <h3 class="main-head-sidebar text-[clamp(13px,2vw,18px)] my-[1rem_0]">
           ahmed
         </h3>
-        <ul class="flex flex-col gap-6 items-center md:items-start">
-          <li>
-            <a href="index.html" aria-label="Dashboard">
-              <i class="fa-regular fa-chart-bar fa-fw" aria-hidden="true"></i>
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a href="settings.html" aria-label="Settings">
-              <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
-              <span>Settings</span>
-            </a>
-          </li>
-          <li>
-            <a href="profile.html" aria-label="Profile">
-              <i class="fa-regular fa-user fa-fw 2" aria-hidden="true"></i>
-              <span>Profile</span>
-            </a>
-          </li>
-          <li>
-            <a href="projects.html" aria-label="Projects">
-              <i
-                class="fa-solid fa-diagram-project fa-fw"
-                aria-hidden="true"
-              ></i>
-              <span>Projects</span>
-            </a>
-          </li>
-          <li>
-            <a href="courses.html" aria-label="Courses">
-              <i
-                class="fa-solid fa-graduation-cap fa-fw"
-                aria-hidden="true"
-              ></i>
-              <span>Courses</span>
-            </a>
-          </li>
-          <li>
-            <a href="friends.html" aria-label="Friends">
-              <i class="fa-regular fa-circle-user fa-fw" aria-hidden="true"></i>
-              <span>Friends</span>
-            </a>
-          </li>
-          <li>
-            <a href="files.html" aria-label="Files" aria-current="page">
-              <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
-              <span>Files</span>
-            </a>
-          </li>
-          <li>
-            <a href="plans.html" aria-label="Plans">
-              <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
-              <span>Plans</span>
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="flex md:flex-col gap-6 justify-center w-full">
+            <li>
+              <a href="index.html" aria-label="Dashboard">
+                <i class="fa-regular fa-chart-bar fa-fw" aria-hidden="true"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="settings.html" aria-label="Settings">
+                <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="profile.html" aria-label="Profile">
+                <i class="fa-regular fa-user fa-fw 2" aria-hidden="true"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="projects.html" aria-label="Projects">
+                <i
+                  class="fa-solid fa-diagram-project fa-fw"
+                  aria-hidden="true"
+                ></i>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <label for="bar-nav" class="p-4 md:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+              <input type="checkbox" id="bar-nav" hidden class="peer" />
+              <ul
+                class="flex flex-col gap-6 absolute md:static bottom-full opacity-0 scale-0 pointer-events-none peer-checked:scale-100 peer-checked:opacity-100 peer-checked:pointer-events-auto duration-300 transition-transform transition-opacity bg-box-bg rounded-tr-2xl rounded-tl-2xl p-4 md:opacity-100 md:scale-100 md:pointer-events-auto md:bg-transparent md:p-0 md:rounded-0 md:w-full"
+              >
+                <li>
+                  <a href="courses.html" aria-label="Courses">
+                    <i
+                      class="fa-solid fa-graduation-cap fa-fw"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Courses</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="friends.html" aria-label="Friends">
+                    <i
+                      class="fa-regular fa-circle-user fa-fw"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Friends</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="files.html" aria-label="Files" aria-current="page">
+                    <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+                    <span>Files</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="plans.html" aria-label="Plans">
+                    <i
+                      class="fa-regular fa-credit-card fa-fw"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Plans</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </aside>
       <!-- end aside -->
       <div class="flex-1">
@@ -554,7 +572,7 @@
                 </div>
               </div>
               <div
-                class="rad-articles shadow-aside hover-animate p-8 self-end  min-w-[220px] flex-1 flex flex-col gap-12 files-statistics text-[13px] xl:sticky xl:top-15 "
+                class="rad-articles shadow-aside hover-animate p-8 self-end min-w-[220px] flex-1 flex flex-col gap-12 files-statistics text-[13px] xl:sticky xl:top-15"
               >
                 <h2 class="font-black text-4xl">Files Statistics</h2>
                 <ul class="flex flex-col gap-4">
@@ -611,7 +629,7 @@
                   class="p-6 cursor-pointer duration-300 hover:bg-blue-color/40 rounded-2xl bg-blue-color/70 self-center group font-bold"
                 >
                   <i
-                    class="fa-solid fa-angles-up duration-300  transition-transform group-hover:-translate-y-2 me-2"
+                    class="fa-solid fa-angles-up duration-300 transition-transform group-hover:-translate-y-2 me-2"
                   ></i>
                   Upload
                 </button>
