@@ -4,8 +4,6 @@
 
 ### 🏆 Precision-Engineered for Extreme Scalability, Fluidity, and Semantic Flawlessness
 
-![Elite Dashboard Overview](./public/hero.png)
-
 [![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#) ![Maintained](https://img.shields.io/badge/Maintained-Yes-blue?style=for-the-badge)
 
 ---
@@ -120,9 +118,11 @@ Here is the stacked evidence of flawless performance across all eight pages:
 
 <div align="center">
 
-![Dashboard Audit Scores](./public/Dashboard.png)
+![Dashboard Audit Scores](./public/header.png)
 
-![Dashboard Audit Vitals](./public/Dashboard2.png)
+---
+
+![Dashboard Audit Vitals](./public/header2.png)
 
 </div>
 
@@ -136,6 +136,8 @@ Here is the stacked evidence of flawless performance across all eight pages:
 <div align="center">
 
 ![Settings Audit Scores](./public/settings.png)
+
+---
 
 ![Settings Audit Vitals](./public/settings2.png)
 
@@ -152,6 +154,8 @@ Here is the stacked evidence of flawless performance across all eight pages:
 
 ![Profile Audit Scores](./public/profile.png)
 
+---
+
 ![Profile Audit Vitals](./public/profile2.png)
 
 </div>
@@ -166,6 +170,8 @@ Here is the stacked evidence of flawless performance across all eight pages:
 <div align="center">
 
 ![Projects Audit Scores](./public/projects.png)
+
+---
 
 ![Projects Audit Vitals](./public/projects2.png)
 
@@ -182,6 +188,8 @@ Here is the stacked evidence of flawless performance across all eight pages:
 
 ![Courses Audit Scores](./public/courses.png)
 
+---
+
 ![Courses Audit Vitals](./public/courses2.png)
 
 </div>
@@ -196,6 +204,8 @@ Here is the stacked evidence of flawless performance across all eight pages:
 <div align="center">
 
 ![Friends Audit Scores](./public/friends.png)
+
+---
 
 ![Friends Audit Vitals](./public/friends2.png)
 
@@ -212,6 +222,8 @@ Here is the stacked evidence of flawless performance across all eight pages:
 
 ![Files Audit Scores](./public/files.png)
 
+---
+
 ![Files Audit Vitals](./public/files2.png)
 
 </div>
@@ -220,37 +232,4 @@ Here is the stacked evidence of flawless performance across all eight pages:
 
 ### 💳 Plans Page
 
-- **Scores:** Performance: 100 \| Accessibility: 100 \| Best Practices: 100 \| SEO: 100
-- **Core Web Vitals:** First Contentful Paint: 0.4s \| Largest Contentful Paint: 0.4s \| **CLS: 0**
-
-<div align="center">
-
-![Plans Audit Scores](./public/plans.png)
-
-![Plans Audit Vitals](./public/plans2.png)
-
-</div>
-
----
-
-## 👨‍💻 THE CRAFTSMAN: AHMED YASSER
-
-> "Engineering is not merely writing code that works; it is crafting an architecture that scales, performs, and speaks for itself."
-
-I am a **15-year-old Junior Front-End Developer** with a relentless obsession for performance, clean architecture, and pixel-perfect rendering.
-
-- **Daily Commitment:** I dedicate **8 to 10 hours daily** to deep-work, mastering CSS algorithms, and understanding the DOM at a microscopic level.
-- **Project Portfolio:** Successfully engineered and delivered **14+ high-performance projects** in under a few months of active learning.
-- **Vision:** To fully master the Browser Rendering Engine and build the next generation of scalable web applications.
-
----
-
-### 📞 LET'S CONNECT
-
-<div align="center">
-
-|                                                      LinkedIn                                                      |        GitHub        |                       Email                       |      WhatsApp      |
-| :----------------------------------------------------------------------------------------------------------------: | :------------------: | :-----------------------------------------------: | :----------------: |
-| [![LinkedIn](https://img.shields.io/badge/Ahmed_Yasser-0077B5?style=flat-square&logo=linkedin&logoColor=white)](#) | [Ahmed-let-front](#) | [letcosdgp@gmail.com](mailto:letcosdgp@gmail.com) | `+20 105 011 9571` |
-
-</div>
+- \*\*Scores
